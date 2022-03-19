@@ -1,0 +1,390 @@
+{{InfoBox stack
+|{{InfoBox homepage|http://clang.llvm.org/|header=true}}
+|{{InfoBox project|LLVM}}
+|{{InfoBox wikipedia}}
+}}<blockquote>'''Clang''' is [[Article description::a "LLVM native" C/C++/Objective-C compiler using LLVM as a backend and optimizer.]] It aims to be GCC compatible yet stricter, offers fast compile times with low memory usage, and has useful error and warning messages for easier compile troubleshooting.</blockquote>
+
+==Preface==
+
+Clang is the preferred compiler for several projects such as {{Package|www-client/firefox}} and {{Package|www-client/chromium}}. It's the default compiler for the BSDs, Apple and Google operating systems. Because such tech giants have thrown their support behind it, it has good financial backing and a rapid development pace adding new features, hardware support, and increased software compatibility for each new release. Although it's not the default Linux compiler, Debian regularly builds their package archive with a success rate of 96% using Clang.<ref>https://clang.debian.net/</ref> 
+
+You can choose to either have Clang fulfill a hard dependency and quietly reside on your system, or you can go down the Clang/LLVM toolchain rabbit hole. The choice is yours, and this wiki will help you start your journey. The Debian Clang testing archive  The Gentoo bug tracker are necessary sources of information to see if other people using Clang system wide have the same issues as you. You can check the Clang bug tracker on Gentoo here, or check the package  you're having difficulty with and see if a bug report has already been filed for Clang.
+
+== Clang resources ==
+As noted in the preface, please become familiar with the following resources. 
+
+The Gentoo Clang bug tracker should be one of your main resources for looking up known failures with Clang. If you come across a bug not reported on our Bugzilla, open a new bug report and make it block {{Bug|408963}}. You can also check that bug tracker for issues before you start using Clang, to prep for any possible issues you might come across.
+
+[https://clang.debian.net/ The Debian Clang archive] is an invaluable source of information for building Linux packages with Clang. Check there for information in regards to building packages with Clang. Everything is neatly organized into different types of categories to help identify issues when using Clang system wide.
+
+[https://clang.llvm.org/docs/index.html LLVM's Clang documentation]<ref>https://clang.llvm.org/docs/index.html</ref> is a Clang resource goldmine. You'll find a plethora of information there that you won't find here, featuring articles which are beyond the scope of this wiki such as assembling a complete toolchain. Please note, LLVM always uses the upcoming version of Clang in the documentation even though it hasn't been finalized yet. As of this wiki edit, we have Clang 12 in the Gentoo tree but the documentation reads Clang 13. [https://clang.llvm.org/docs/ReleaseNotes.html It's a good idea to check the release notes]<ref>https://clang.llvm.org/docs/ReleaseNotes.html</ref> before you  dive in head first to make sure you don't accidentally use something not in the current Gentoo version and then wonder why something breaks or doesn't work.
+
+== Prerequisites ==
+
+* '''IT'S DANGEROUS TO GO ALONE! Enable FEATURES="test"!'''
+* Do you want Clang to quietly reside on your system as a dependency?
+* Do you want Clang to exist as a per package compiler override?
+* Do you want Clang to be the default compiler system wide?
+* Do you want Clang/LLVM to be the default toolchain system wide?
+* Time, patience, and personal responsibility.
+
+=== FEATURES="${FEATURES} test" ===
+One of the most important first steps is to enable Portage's test phase. You will need this variable set to decipher if Clang is actually compiling packages equivalent to GCC. Otherwise, you could end up with successfully compiled packages that segfault when executed and be none the wiser. Regardless of how you choose to use Clang, this step is a must. Don't skip it.
+
+==== Per package ====
+If you're going to use Clang on a per package basis, we don't need to enable <code>FEATURES="test"</code> system wide. Let's create an environment override to set the variable for packages we want to compile using Clang but also be sure the package is safe to install. We'll do this via {{Path|/etc/portage/env/features-test}} so use your favorite editor to create the file and then copy and paste the following:{{FileBox|filename=/etc/portage/env/features-test|lang=bash|1=
+# we use the ${FEATURES} definition to not override the portage defaults
+FEATURES="${FEATURES} test"
+}}
+
+==== System wide ====
+If you do want to use Clang system wide, then it's better to set the variable globally via {{Path|/etc/portage/make.conf}}. Copy and paste the following into your <code>make.conf</code> file:{{FileBox|filename=/etc/portage/make.conf|lang=bash|1=
+# we use the ${FEATURES} definition to not override the portage defaults
+FEATURES="${FEATURES} test"
+}}Make sure you respect Portage's original <code>FEATURES</code> settings by using <code>${FEATURES}</code> in the variable. This allows us to simply tag our settings to the end of the variable without overriding the original Portage setting, no matter how you choose to do it.
+
+=== The [https://packages.gentoo.org/useflags/clang <code>clang</code>] USE Flag ===
+Gentoo has added a [https://packages.gentoo.org/useflags/clang <code>clang</code>] USE flag to Portage to help you nestle Clang in your system. 
+
+==== Per package ====
+If you don't plan on using Clang system wide, it's a wise choice to set the clang USE flag locally on a per package basis via {{Path|/etc/portage/package.use}} or simply not at all. Use the following as an example if you have packages on your system that you need to add to {{Path|/etc/portage/package.use}}.
+
+{{FileBox|filename=/etc/portage/package.use|lang=bash|1=
+# clang isn't the preferred compiler for libreoffice
+app-office/libreoffice -clang
+
+# clang is the preferred compiler for firefox
+www-client/firefox clang
+}}
+
+==== System wide ====
+If you do want Clang to be the default compiler system wide then you can enable the USE flag globally via {{Path|/etc/portage/make.conf}} to allow programs to build using Clang or use Clang specific features. {{FileBox|filename=/etc/portage/make.conf|lang=bash|1=
+USE="${USE} clang"
+}}If you don't want to set the flag globally, you can still accomplish the same thing using local flags for all packages that have the [https://packages.gentoo.org/useflags/clang <code>clang</code>] USE flag. It's simply more tedious to do, but both achieve the same outcome. You don't have to do any of the above no matter how you move forward, but the information is here should you want to come back to visit later.
+
+=== The <code>[https://packages.gentoo.org/useflags/pic pic]</code> USE Flag ===
+If you're using Clang system wide, it might help to set this USE flag since several packages that have the flag will ICE ('''I'''''nternal'' '''C'''''ompiler'' '''E'''''rror'') and complain about needing to recompile using -fPIC otherwise.
+
+{{FileBox|filename=/etc/portage/make.conf|lang=bash|1=
+USE="${USE} clang pic"
+}}As always, you can set these flags locally, too. If you don't have any packages that have the flag on your system, or no packages ICE with -fPIC errors, you don't need to set them to begin with. Keep a note of this if you come across these errors in the future.
+
+=== Time, patience, and personal responsibility ===
+To use Clang system wide on a Gentoo system is a non-standard practice. Adding in <code>FEATURES="test"</code> means compiling takes longer because test suites need to run. Please have patience and understand the extra time helps you troubleshoot against GCC. You are going to have to compile packages with Clang, if they fail, compile with GCC, if the tests pass successfully, check to see if Clang is using a flag or a LLVM alternative library like compiler-rt or libc++ that is causing the error. Recompile, and see if it passes testing. If it does, then you've found a good configuration. If it doesn't, it could mean the package simply fails the test phase when using Clang. If GCC also fails, then it means the package isn't passing tests. In those cases, double check the results against each compiler and if one fails less, choose that compiler over the other.
+
+Gentoo developers have benevolently added global variables and scripts in Portage that check the toolchain in use to allow a user to experiment and use alternative compilers and tools, which is a nice gesture beyond the default GCC Linux compiler. They've given you the tools, but you're personally responsible for your system. If you break your system, you are responsible for fixing it. Research before you jump in and read the wiki thoroughly. If you report bugs, have some patience and remember they're not obligated to fix non-standard Gentoo setups, and if they do help, then they're going above and beyond developer responsibilities. 
+
+== USE Flags ==
+Below are Clang's USE flags. Get to know them and understand what they do, you'll need to set or unset them based on your needs as you follow the wiki.
+{{USEflag|package=sys-devel/clang}}
+
+==Minimal Install: Set it and Forget it==
+You might not want Clang on your system but still need it for something that has a dependency on it. The easiest way is to minimize the USE flags and have it tucked away, hidden like a <code>ninja</code> in waiting.
+
+=== Minimal Clang USE flags ===
+Add the following to {{Path|/etc/portage/package.use}}:{{FileBox|filename=/etc/portage/package.use|lang=bash|1=
+# minimal clang flags
+sys-devel/clang -default-compiler-rt -default-libcxx -default-lld -llvm-libunwind -static-analyzer
+}}
+
+=== Minimal Clang install ===
+After you've removed the necessary USE flags from Clang, you'll need to install the Clang package so you can meet dependency requirements. Run the following in a terminal of your choice.{{Emerge|params+=|sys-devel/clang}}Now you have a minimal Clang installed on your system for those packages that need it. It will still use GNU Binutils, GCC libraries and runtime so compatibility issues should be minimal. After all, you're only using it to fulfill hard dependency requirements or enable the [https://packages.gentoo.org/useflags/clang <code>clang</code>] USE flag to build a package with the upstream preferred compiler.
+
+== Normal Install: Simple and Safe System Wide Clang ==
+
+=== Simple GCC fallback ===
+
+=== Simple Clang USE flags ===
+
+=== Simple Clang install ===
+{{Emerge|params+=|sys-devel/clang}}
+
+=== Simple system wide Clang ===
+
+== Advanced Install: Safe System Wide Clang/LLVM Toolchain ==
+
+=== Advanced GCC fallback ===
+
+=== Advanced Clang USE flags ===
+
+=== Advanced Clang install ===
+{{Emerge|params+=|sys-devel/clang}}
+
+== Expert Install: Unsafe System Wide Clang/LLVM Toolchain ==
+<ref>https://clang.llvm.org/docs/Toolchain.html</ref>
+
+=== Expert GCC fallback ===
+
+=== Expert Clang USE flags ===
+
+=== Expert Clang install ===
+{{Emerge|params+=|sys-devel/clang}}
+
+== Got Rice? ==
+
+===GCC fallback environments===
+
+Create a configuration file with a set of environment variables using Portage's built in {{Path|[[:/etc/portage/env|/etc/portage/env]]}} directory. This will override any defaults for any packages that fail to compile with clang. The name used below is just an example, so feel free to choose whatever name is desired for the fallback environment. Be sure to substitute chosen name with the examples used in this article.
+
+{{FileBox|filename=/etc/portage/env/compiler-gcc|title=Environment named ''compiler-gcc''|lang=bash|
+CC{{=}}"gcc"
+CXX{{=}}"g++"
+}}
+
+The above is the most basic environmental variable needed. You can change it to suit your needs, such as enabling/disabling link-time optimizations, alternative AR, NM, RANLIB, and so on. Here are two examples below:
+
+{{FileBox|filename=/etc/portage/env/compiler-gcc-lto|title=Environment variable named ''compiler-gcc-lto''|lang=bash|1=CC{{=}}"gcc"
+CXX{{=}}"g++"
+CFLAGS{{=}}"-flto=$N -march{{=}}native -O2 -pipe"    #$N refers to the amount of threads used during LTO, you should usually set it to $(nproc)
+CXXFLAGS{{=}}"${CFLAGS}"
+AR{{=}}"gcc-ar"
+NM{{=}}"gcc-nm"
+RANLIB{{=}}"gcc-ranlib"}}
+
+{{FileBox|filename=/etc/portage/env/compiler-gcc|title=Environment variable named ''compiler-gcc''|lang=bash|
+CC{{=}}"gcc"
+CXX{{=}}"g++"
+CFLAGS{{=}}"-march{{=}}native -O2 -pipe"
+CXXFLAGS{{=}}"${CFLAGS}"
+AR{{=}}"ar"
+NM{{=}}"nm"
+RANLIB{{=}}"ranlib"
+}}
+
+Basically, copy over your current working GCC config from your make.conf in the event we need to use it as a fallback. If you choose to use LLVM's implementation of AR, NM, and RANLIB as detailed later in the article, be sure to set them back to the GNU versions for your GCC fallback environments as shown in the above example. If you choose not to, you can ignore the AR, NM, and RANLIB variables. If you want to use link-time optimization it's a good idea to have two separate environments like the above examples.
+
+In the event you have to use the GCC fallback environment(s) set the appropriate flags in the {{Path|/etc/portage/package.env}} file.
+
+{{FileBox|filename=/etc/portage/package.env|title=Falling back to ''GCC'' for ''app-foo/bar'' and ''app-bar/baz''|
+app-foo/bar compiler-gcc-lto        #compiled using GCC with link-time optimization since package bar compiles using lto
+app-bar/baz compiler-gcc     #compiled using GCC with no link-time optimization since package baz fails using lto
+}}
+
+===Clang environments===
+
+Now that we've set up a safe fallback we can proceed to enable the usage of Clang in Gentoo. There are two ways to do this: System wide using {{Path|/etc/portage/make.conf}} or via environmental variables like the one(s) we created for the GCC fallback.
+
+We'll use the same process as we did earlier in the article for setting up GCC fallbacks.
+
+{{FileBox|filename=/etc/portage/env/compiler-clang|title=Environment variable named ''compiler-clang''|lang=bash|
+CC{{=}}"clang"
+CXX{{=}}"clang++"
+}}
+
+You can now use Clang on a per package basis by invoking the compiler-clang environmental variable you created.
+
+{{FileBox|filename=/etc/portage/package.env|title=Using the ''Clang'' compiler for ''app-foo/bar'' and ''app-bar/baz''|
+app-foo/bar compiler-clang
+app-bar/baz compiler-clang
+}}The setup of a clang + LTO environment is described later in the article.
+
+===Global configuration via make.conf===
+
+When attempting to use Clang system wide '''the system absolutely must have a GCC fallback!''' This cannot be stressed enough as the system will not be able to compile everything using Clang at the moment, such as the GCC compiler. Gentoo maintains a [https://bugs.gentoo.org/408963 bug tracker] for packages that fail to build with Clang. Configuring Gentoo to use Clang system wide is simple. Change the <var>CC</var> and <var>CXX</var> variables in {{Path|/etc/portage/make.conf}} to reference the Clang equivalents. No further configuration is necessary.
+
+{{FileBox|filename=/etc/portage/make.conf|title=Setting the system compiler to ''Clang''|lang=bash|
+CC{{=}}"clang"
+CXX{{=}}"clang++"
+}}
+
+Packages that must use GCC for compiling can be handled with one of the fallback environments created earlier.
+
+==Usage==
+
+===Bootstrapping the Clang toolchain===
+Mixing clang and its toolchain / libraries with the gcc toolchain / libraries (especially the linker) will often lead to issues like linker errors during emerge.
+To prevent this, the clang toolchain is built first with gcc and then with itself to get a self-providing compiler.
+
+Prepare the environment for the Clang toolchain (see above), e.g.
+{{FileBox|filename=/etc/portage/env/compiler-clang|1=
+CC="clang"
+CXX="clang++"
+LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind"
+}}
+This example replaces not only the compiler but also the GNU linker ld.bfd with the llvm linker lld.
+It is a drop-in replacement, but significantly faster than the bfd linker.
+
+Set USE flags <code>default-compiler-rt default-lld</code> for clang.
+Then emerge clang llvm compiler-rt llvm-libunwind lld with the default gcc environment:
+
+{{RootCmd|emerge clang llvm compiler-rt llvm-libunwind lld}}
+
+You can also add the <code>default-libcxx</code> USE flag to use llvms C++ STL with clang, however this is HEAVILY discouraged as libstdc++ and libc++ are not ABI compatible. A program built against libstdc++ will likely break when using a library built against libc++, and vice versa.
+
+Note that sys-libs/llvm-libunwind deals with linking issues that sys-libs/libunwind has, so it is preferred to use and replaces the non-llvm libunwind package if installed (it builds with -lgcc_s to resolve issues with __register_frame / __deregister_frame undefined symbols).
+
+Enable the clang environment for these packages now:
+{{FileBox|filename=/etc/portage/package.env|1=
+sys-devel/llvm compiler-clang
+sys-libs/libcxx compiler-clang
+sys-libs/libcxxabi compiler-clang
+sys-libs/compiler-rt compiler-clang
+sys-libs/compiler-rt-sanitizers compiler-clang
+sys-libs/llvm-libunwind compiler-clang
+sys-devel/lld compiler-clang
+sys-devel/clang compiler-clang
+}}
+
+Repeat the emerge step with the new environment. The toolchain will now be rebuild with itself instead of gcc.
+{{RootCmd|emerge clang llvm libcxx libcxxabi compiler-rt llvm-libunwind lld}}
+
+You are now free to use clang with other packages.
+
+===Link-time optimizations with Clang===
+
+The link-time optimization feature defers optimizing the resulting executables to linking phase. This can result in better optimization of packages but isn't standard behavior in Gentoo yet. Clang uses lld for LTO. 
+
+Note: Clang can also do LTO via the gold linker, however this is discouraged by llvm since gold is effectively dead upstream. To use gold with clang + LTO, you must first emerge llvm with the <code>gold</code> USE flag, and then set <code>-fuse-ld=gold</code> in the following examples. 
+
+====Environment====
+
+Clang supports two types of link time optimization:
+
+* Full LTO, which is the traditional approach also used by gcc where the whole link unit is analyzed at once. Using it is no longer recommended.
+*ThinLTO, where the link unit is scanned and split up into multiple parts.<ref>http://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html</ref> With ThinLTO, the final compilation units only contain the code that are relevant to the current scope, thus speeding up compilation, lowering footprint and allowing for more parallelism at (mostly) no cost. ThinLTO is the recommended LTO mode when using Clang.
+
+If you need to use full LTO for some reason, replace <code>-flto=thin</code> with <code>-flto</code> in the following examples. There should be no compatibility differences between Full LTO and ThinLTO. Additionally, if you did not build Clang with the <code>default-lld</code> useflag, you will have to add <code>-fuse-ld=lld</code> to the following LDFLAGS.
+
+{{FileBox|filename=/etc/portage/env/compiler-clang-lto|title=Environment named ''compiler-clang-lto''|lang=bash|1=CC{{=}}"clang"                            
+CXX{{=}}"clang++"                         
+CFLAGS{{=}}"${CFLAGS} -flto=thin"              
+CXXFLAGS{{=}}"${CXXFLAGS} -flto=thin"          
+LDFLAGS{{=}}"-Wl,-O2 -Wl,--as-needed"    #-O2 refers to binary size optimization during linking, it is NOT related to the -O levels of the compiler}}
+
+As an alternative, LLVM provides their own ar, nm, and ranlib. You're free to use them and may or may not get more mileage over using the standard ar, nm, and ranlib since they're intended to handle LLVM bitcode which Clang produces when using the <code>-flto</code> flag.
+
+{{FileBox|filename=/etc/portage/env/compiler-clang-lto|title=Environment named ''compiler-clang-lto''|lang=bash|1=CC{{=}}"clang"                            
+CXX{{=}}"clang++"                         
+CFLAGS{{=}}"${CFLAGS} -flto=thin"              
+CXXFLAGS{{=}}"${CXXFLAGS} -flto=thin"          
+LDFLAGS{{=}}"-Wl,-O2 -Wl,--as-needed"    #-O2 refers to binary size optimization during linking, it is NOT related to the -O levels of the compiler
+AR{{=}}"llvm-ar"
+NM{{=}}"llvm-nm"
+RANLIB{{=}}"llvm-ranlib"}}
+
+Now you can set {{Path|/etc/portage/package.env}} overrides using Clang with LTO enabled.
+
+{{FileBox|filename=/etc/portage/package.env|title=Enabling ''LTO'' for ''app-foo/bar'' and ''app-bar/baz''|
+app-foo/bar compiler-clang-lto
+app-bar/baz compiler-clang-lto
+}}
+
+====Global configuration====
+
+Similar to what we covered earlier in the article, we can do a system wide Clang with LTO enabled setup by changing our {{Path|/etc/portage/make.conf}} file.
+
+{{FileBox|filename=/etc/portage/make.conf|title=Setting the system compiler to ''Clang''|lang=bash|1=CC{{=}}"clang"                            
+CXX{{=}}"clang++"                         
+CFLAGS{{=}}"${CFLAGS} -flto=thin"              
+CXXFLAGS{{=}}"${CXXFLAGS} -flto=thin"          
+LDFLAGS{{=}}"-Wl,-O2 -Wl,--as-needed"    #-O2 refers to binary size optimization during linking, it is NOT related to the -O levels of the compiler
+AR{{=}}"llvm-ar"
+NM{{=}}"llvm-nm"
+RANLIB{{=}}"llvm-ranlib"}}
+
+Again, it's up to you if you want to set the AR, NM, and RANLIB to the LLVM implementations. Since earlier in the article we set up compiler environments using Clang without LTO, GCC without LTO, and GCC with LTO, we can pick and choose which is best on a per package basis. Since the goal is to compile packages system wide with Clang using LTO and not every package will successfully compile using it, we'll have to fall back to Clang with LTO disabled or GCC. Your {{Path|/etc/portage/package.env}} may look like this:
+
+{{FileBox|filename=/etc/portage/package.env|title=Example ''package.env'' setup|
+app-foo/bar compiler-clang   #compiled using Clang with no link-time optimization since package bar fails using flto
+app-bar/baz compiler-gcc     #compiled using GCC with no link-time optimization since package bar fails using flto
+app-baz/foo compiler-gcc-lto        #compiled using GCC with link-time optimization since package foo compiles using flto
+}}
+
+==Using Clang with distcc==
+
+In order to use Clang on a distcc client, additional symlinks have to be created in {{Path|/usr/lib*/distcc/bin}}
+
+{{Emerge|params+=|dev-util/distcc}}
+
+{{RootCmd|ln -s /usr/bin/distcc /usr/lib/distcc/bin/clang|ln -s /usr/bin/distcc /usr/lib/distcc/bin/clang++|ln -s /usr/bin/distcc /usr/lib64/distcc/bin/clang|ln -s /usr/bin/distcc /usr/lib64/distcc/bin/clang++}}
+
+==Using Clang with ccache==
+
+Gentoo has rolled passed the old versions that required any manual intervention. ccache will automatically work with Clang once both are installed on the system. However you've chosen to install Clang, you'll need to install ccache.
+
+{{Emerge|params+=|dev-util/ccache}}
+
+=== FEATURES="ccache" ===
+Add the feature <code>ccache</code> to the variable <code>FEATURES</code> in {{Path|/etc/portage/make.conf}}. Once again, make sure you don't override the default <code>FEATURES</code> settings by adding <code>${FEATURES}</code> to the variable.{{FileBox|filename=/etc/portage/make.conf|lang=bash|1=
+# we use the ${FEATURES} definition to not override the portage defaults
+FEATURES="${FEATURES} ccache test"
+}}
+
+==Troubleshooting ==
+
+===Compile errors when using Clang with -flto===
+
+If the packages you're installing are failing, check your logs. Often times packages with errors like the following will need to disable LTO by invoking the compiler-clang environment.
+
+{{FileBox|filename=/var/log/portage/sys-apps:less-483-r1:20160712-034715.log|
+<nowiki>
+/usr/bin/x86_64-pc-linux-gnu-ld: error: version.o:1:3: invalid character
+/usr/bin/x86_64-pc-linux-gnu-ld: error: version.o:1:3: syntax error, unexpected $end
+/usr/bin/x86_64-pc-linux-gnu-ld: error: version.o: not an object or archive
+</nowiki>
+}}
+
+You will also most likely see this error in every LTO failure case.
+
+{{FileBox|filename=/var/log/portage/sys-apps:less-483-r1:20160712-034715.log|
+<nowiki>
+x86_64-pc-linux-gnu-clang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)
+</nowiki>
+}}
+
+Simply add the failing package to your {{Path|/etc/portage/package.env}}. In this case it's {{Package|sys-apps/less}}, so we'll apply the proper override.
+
+{{FileBox|filename=/etc/portage/package.env|title=Example ''package.env'' setup|
+sys-apps/less compiler-clang   #compiled using Clang with no link-time optimization since package less fails using lto
+}}
+
+Sometimes a package will fail to compile even when disabling LTO because it requires another package which was compiled using -flto and works incorrectly. You may see an error like this:
+
+{{FileBox|filename=/var/log/portage/dev-libs:boehm-gc-7.4.2:20160713-085706.log|
+/usr/lib64/libatomic_ops.a: error adding symbols: Archive has no index; run ranlib to add one
+}}
+
+In this case libatomic_ops is causing boehm-gc to fail compiling. Recompile the program causing the failure using your non-LTO environment and then recompile the new program. In this case, boehm-gc fails when using LTO, so we'll add both of them to our {{Path|/etc/portage/package.env}} file to build them without LTO.
+
+{{FileBox|filename=/etc/portage/package.env|title=Example ''package.env'' setup|
+dev-libs/boehm-gc		compiler-clang
+dev-libs/libatomic_ops		compiler-clang
+}}
+
+===Use of GNU extensions without proper -std====
+
+Some packages tend to use GNU extensions in their code without specifying <code>-std=</code> appropriately. GCC allows that usage, yet Clang disables some of more specific GNU extensions by default.
+
+If a particular package relies on such extensions being available, you will need to append the correct ''-std='' flag to it:
+
+*<code>-std=gnu89</code> for C89/C90 with GNU extensions,
+*<code>-std=gnu99</code> for C99 with GNU extensions,
+*<code>-std=gnu++98</code> for C++:1998 with GNU extensions.
+
+A common symptom of this problem are multiple definitions of inline functions like this:
+
+{{FileBox|filename=/var/log/portage/Example package error in example log|
+<nowiki>
+/usr/bin/x86_64-pc-linux-gnu-ld: error: ../mpi/.libs/libmpi.a(mpi-bit.o): multiple definition of '_gcry_mpih_add'
+/usr/bin/x86_64-pc-linux-gnu-ld: ../mpi/.libs/libmpi.a(mpi-add.o): previous definition here
+/usr/bin/x86_64-pc-linux-gnu-ld: error: ../mpi/.libs/libmpi.a(mpi-bit.o): multiple definition of '_gcry_mpih_add_1'
+/usr/bin/x86_64-pc-linux-gnu-ld: ../mpi/.libs/libmpi.a(mpi-add.o): previous definition here
+</nowiki>
+}}
+
+This is because Clang uses C99 inline rules by default which do not work with gnu89 code. To work around it, you most likely have to pass <code>-std=gnu89</code> or set one of your environmental overrides to use GCC to compile the failing package if passing the right <code>-std=</code> flag doesn't work.
+
+==References==
+
+{{reflist}}
+
+[[Category:Core system]] 
+[[Category:Compilation]]
+
+# llvm-strip: The file was not recognized as a valid object file; disable -flto; doesn't seem to happen when usign libcxxabi libcxx llvm-libunwind compiler-rt
+
+# cmake and symbols with jsoncpp
+
+# pygobject requires pycairo
+# elftoolchain requires groff
+# sed -i 's/SEARCH_REGEX/REPLACEMENT/g' */*
