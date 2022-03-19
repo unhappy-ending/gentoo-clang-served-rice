@@ -1,0 +1,12 @@
+diff a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -30,7 +30,7 @@
+ set_target_properties(double-conversion PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION 3)
+ 
+ # set up testing if requested
+-option(BUILD_TESTING "Build test programs" OFF)
++option(BUILD_TESTING "Build test programs" ON)
+ if(BUILD_TESTING)
+   enable_testing()
+   include(CTest)
