@@ -1,20 +1,7 @@
-# enabled flags
--custom-cflags
--threads
--vst
--pkg-config
--system-service
+# LLVM targets. Comment to enable the targets you want. If you've already built
+# the LLVM toolchain, you will need to remove it, build it with GCC using the
+# targets you want, and then rebuild it using itself.
 
-# disabled flags
-acl
-branding
-debug
-doc
-examples
-gnome
-gtk-doc
-handbook
-ipv6
 llvm_targets_AArch64
 llvm_targets_AMDGPU
 llvm_targets_ARC
@@ -27,7 +14,7 @@ llvm_targets_Lanai
 llvm_targets_M68k
 llvm_targets_MSP430
 llvm_targets_Mips
-#llvm_targets_NVPTX
+llvm_targets_NVPTX
 llvm_targets_PowerPC
 llvm_targets_RISCV
 llvm_targets_Sparc
@@ -36,11 +23,3 @@ llvm_targets_VE
 llvm_targets_WebAssembly
 #llvm_targets_X86
 llvm_targets_XCore
-man
-pie
-postscript
-seccomp
-split-usr
-static-libs
-webengine
-xattr
