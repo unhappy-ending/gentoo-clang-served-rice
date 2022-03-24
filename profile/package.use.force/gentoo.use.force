@@ -1,0 +1,3 @@
+sys-devel/llvm LLVM_TARGETS: -AArch64 -AMDGPU -ARC -ARM -AVR -BPF -CSKY -Hexagon -Lanai -M68k -MSP430 -Mips NVPTX -PowerPC -RISCV -Sparc -SystemZ -VE -WebAssembly -X86 -XCore
+sys-devel/clang -pie LLVM_TARGETS: -AArch64 -AMDGPU -ARC -ARM -AVR -BPF -CSKY -Hexagon -Lanai -M68k -MSP430 -Mips NVPTX -PowerPC -RISCV -Sparc -SystemZ -VE -WebAssembly -X86 -XCore
+sys-libs/glibc static-pie
