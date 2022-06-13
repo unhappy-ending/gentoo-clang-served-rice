@@ -1,1 +1,2 @@
-dev-libs/gmp cxx # test phase fails with clang
+# test phase fails with clang
+dev-libs/gmp -cxx
