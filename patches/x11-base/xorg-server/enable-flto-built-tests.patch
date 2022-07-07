@@ -1,0 +1,26 @@
+--- a/m4/libtool.m4
++++ b/m4/libtool.m4
+@@ -7537,11 +7537,6 @@
+ ])
+
+ _lt_libdeps_save_CFLAGS=$CFLAGS
+-case "$CC $CFLAGS " in #(
+-*\ -flto*\ *) CFLAGS="$CFLAGS -fno-lto" ;;
+-*\ -fwhopr*\ *) CFLAGS="$CFLAGS -fno-whopr" ;;
+-*\ -fuse-linker-plugin*\ *) CFLAGS="$CFLAGS -fno-use-linker-plugin" ;;
+-esac
+
+ dnl Parse the compiler output and extract the necessary
+ dnl objects, libraries and library flags.
+
+--- a/test/meson.build
++++ b/test/meson.build
+@@ -133,8 +133,6 @@
+
+     unit_c_args = unit_defines
+     if meson.get_compiler('c').has_link_argument('-Wl,-wrap')
+-       # LTO breaks with -Wl,-wrap on certain configurations
+-       unit_c_args += ['-fno-lto']
+        unit_sources += [
+         'xi1/protocol-xchangedevicecontrol.c',
+         'xi2/protocol-common.c',
