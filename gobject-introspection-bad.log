@@ -1,0 +1,50 @@
+[32m * [39;49;00mPackage:    dev-libs/gobject-introspection-1.72.0
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: gnome@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_64 amd64 elibc_glibc kernel_linux python_single_target_python3_10 test userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+[32m * [39;49;00mPackage:    dev-libs/gobject-introspection-1.72.0
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: gnome@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_64 amd64 elibc_glibc kernel_linux python_single_target_python3_10 test userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+ [32m*[0m Using python3.10 to build
+>>> Unpacking source...
+>>> Unpacking gobject-introspection-1.72.0.tar.xz to /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work
+>>> Source unpacked in /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work
+>>> Preparing source in /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0 ...
+>>> Source prepared.
+>>> Configuring source in /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0 ...
+meson setup --libdir lib64 --localstatedir /var/lib --prefix /usr --sysconfdir /etc --wrap-mode nodownload --build.pkg-config-path /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/temp/python3.10/pkgconfig:/usr/share/pkgconfig --pkg-config-path /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/temp/python3.10/pkgconfig:/usr/share/pkgconfig --native-file /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini -Db_pch=false -Dwerror=false --buildtype plain -Dcairo=enabled -Ddoctool=disabled -Dgtk_doc=false -Dpython=python3.10 /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0 /etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0-build
+[1mThe Meson build system[0m
+Version: 0.62.2
+Source dir: [1m/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0[0m
+Build dir: [1m/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0-build[0m
+Build type: [1mnative build[0m
+Project name: [1mgobject-introspection[0m
+Project version: [1m1.72.0[0m
+
+meson.build:1:0: [1;31mERROR:[0m Unable to detect linker for compiler "clang -Wl,--version -march=native -O2 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -U_FORTIFY_SOURCE"
+stdout: 
+stderr: /usr/sbin/x86_64-pc-linux-gnu-ld: /usr/lib/llvm/14/bin/../lib64/LLVMgold.so: error loading plugin: /usr/lib/llvm/14/bin/../lib64/LLVMgold.so: cannot open shared object file: No such file or directory
+clang-14: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+
+
+A full log can be found at [1m/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0-build/meson-logs/meson-log.txt[0m
+ [31;01m*[0m ERROR: dev-libs/gobject-introspection-1.72.0::gentoo failed (configure phase):
+ [31;01m*[0m   (no error message)
+ [31;01m*[0m 
+ [31;01m*[0m Call stack:
+ [31;01m*[0m     ebuild.sh, line  122:  Called src_configure
+ [31;01m*[0m   environment, line 2578:  Called meson_src_configure
+ [31;01m*[0m   environment, line 1882:  Called die
+ [31;01m*[0m The specific snippet of code:
+ [31;01m*[0m       "${mesonargs[@]}" ) || die
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=dev-libs/gobject-introspection-1.72.0::gentoo'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=dev-libs/gobject-introspection-1.72.0::gentoo'`.
+ [31;01m*[0m The complete build log is located at '/etc/portage/package.log/build/dev-libs/gobject-introspection-1.72.0:20220714-012009.log'.
+ [31;01m*[0m For convenience, a symlink to the build log is located at '/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/temp/environment'.
+ [31;01m*[0m Working directory: '/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0'
+ [31;01m*[0m S: '/etc/portage/package.tmp/portage/dev-libs/gobject-introspection-1.72.0/work/gobject-introspection-1.72.0'
