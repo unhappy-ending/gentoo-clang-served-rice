@@ -1,0 +1,44 @@
+ * Package:    dev-util/wayland-scanner-1.21.0
+ * Repository: gentoo
+ * Maintainer: x11@gentoo.org
+ * USE:        abi_x86_64 amd64 elibc_glibc kernel_linux userland_GNU
+ * FEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking wayland-1.21.0.tar.xz to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work
+>>> Source unpacked in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work
+>>> Preparing source in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 ...
+>>> Source prepared.
+>>> Configuring source in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 ...
+meson setup --libdir lib64 --localstatedir /var/lib --prefix /usr --sysconfdir /etc --wrap-mode nodownload --build.pkg-config-path /usr/share/pkgconfig --pkg-config-path /usr/share/pkgconfig --native-file /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini -Db_pch=false -Dwerror=false --buildtype plain -Ddocumentation=false -Ddtd_validation=false -Dlibraries=false -Dscanner=true -Dtests=false /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build
+[1mThe Meson build system[0m
+Version: 0.63.0
+Source dir: [1m/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0[0m
+Build dir: [1m/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build[0m
+Build type: [1mnative build[0m
+Project name: [1mwayland[0m
+Project version: [1m1.21.0[0m
+
+meson.build:1:0: [1;31mERROR:[0m Unable to detect linker for compiler "clang -Wl,--version -march=native -O2 -flto -fdiagnostics-color=always"
+stdout: 
+stderr: /usr/sbin/x86_64-pc-linux-gnu-ld: /usr/lib/llvm/14/bin/../lib64/LLVMgold.so: error loading plugin: /usr/lib/llvm/14/bin/../lib64/LLVMgold.so: cannot open shared object file: No such file or directory
+clang-14: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+
+
+A full log can be found at [1m/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build/meson-logs/meson-log.txt[0m
+ * ERROR: dev-util/wayland-scanner-1.21.0::gentoo failed (configure phase):
+ *   (no error message)
+ * 
+ * Call stack:
+ *     ebuild.sh, line  127:  Called src_configure
+ *   environment, line 2269:  Called meson_src_configure
+ *   environment, line 1689:  Called die
+ * The specific snippet of code:
+ *       "${mesonargs[@]}" ) || die
+ * 
+ * If you need support, post the output of `emerge --info '=dev-util/wayland-scanner-1.21.0::gentoo'`,
+ * the complete build log and the output of `emerge -pqv '=dev-util/wayland-scanner-1.21.0::gentoo'`.
+ * The complete build log is located at '/etc/portage/package.log/build/dev-util/wayland-scanner-1.21.0:20220723-184618.log'.
+ * For convenience, a symlink to the build log is located at '/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/temp/build.log'.
+ * The ebuild environment file is located at '/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/temp/environment'.
+ * Working directory: '/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0'
+ * S: '/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0'
