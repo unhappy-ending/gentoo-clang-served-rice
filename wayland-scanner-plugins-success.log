@@ -1,0 +1,100 @@
+ * Package:    dev-util/wayland-scanner-1.21.0
+ * Repository: gentoo
+ * Maintainer: x11@gentoo.org
+ * USE:        abi_x86_64 amd64 elibc_glibc kernel_linux userland_GNU
+ * FEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking wayland-1.21.0.tar.xz to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work
+>>> Source unpacked in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work
+>>> Preparing source in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 ...
+>>> Source prepared.
+>>> Configuring source in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 ...
+meson setup --libdir lib64 --localstatedir /var/lib --prefix /usr --sysconfdir /etc --wrap-mode nodownload --build.pkg-config-path /usr/share/pkgconfig --pkg-config-path /usr/share/pkgconfig --native-file /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini -Db_pch=false -Dwerror=false --buildtype plain -Ddocumentation=false -Ddtd_validation=false -Dlibraries=false -Dscanner=true -Dtests=false /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build
+[1mThe Meson build system[0m
+Version: 0.63.0
+Source dir: [1m/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0[0m
+Build dir: [1m/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build[0m
+Build type: [1mnative build[0m
+Project name: [1mwayland[0m
+Project version: [1m1.21.0[0m
+C compiler for the host machine: [1mclang[0m (clang 14.0.6 "clang version 14.0.6")
+C linker for the host machine: [1mclang[0m ld.bfd 2.37
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Has header "[1msys/prctl.h[0m" : [1;32mYES[0m 
+Has header "[1msys/procctl.h[0m" : [1;31mNO[0m 
+Has header "[1msys/ucred.h[0m" : [1;31mNO[0m 
+Checking for function "[1maccept4[0m" : [1;32mYES[0m 
+Checking for function "[1mmkostemp[0m" : [1;32mYES[0m 
+Checking for function "[1mposix_fallocate[0m" : [1;32mYES[0m 
+Checking for function "[1mprctl[0m" : [1;32mYES[0m 
+Checking for function "[1mmemfd_create[0m" : [1;32mYES[0m 
+Checking for function "[1mmremap[0m" : [1;32mYES[0m 
+Checking for function "[1mstrndup[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct xucred[0m" has member "[1mcr_pid[0m" : [1;31mNO[0m 
+Configuring [1mconfig.h[0m using configuration
+Configuring [1mwayland-version.h[0m using configuration
+Found pkg-config: [1m/usr/sbin/x86_64-pc-linux-gnu-pkg-config[0m (1.8.0)
+Run-time dependency [1mexpat[0m found: [1;32mYES[0m [36m2.4.8[0m
+Program [1membed.py[0m found: [1;32mYES[0m (/usr/bin/python3.10 /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/src/embed.py)
+Build targets in project: [1m3[0m
+[1mNOTICE:[0m Future-deprecated features used:
+ * 0.62.0: {'pkgconfig.generate variable for builtin directories'}
+
+wayland [36m1.21.0[0m
+
+  [1mUser defined options[0m
+    Native files         : /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini
+    build.pkg_config_path: /usr/share/pkgconfig
+    buildtype            : plain
+    libdir               : lib64
+    localstatedir        : /var/lib
+    pkg_config_path      : /usr/share/pkgconfig
+    prefix               : /usr
+    sysconfdir           : /etc
+    werror               : false
+    wrap_mode            : nodownload
+    b_pch                : false
+    documentation        : false
+    dtd_validation       : false
+    libraries            : false
+    scanner              : true
+    tests                : false
+
+Found ninja-1.10.2 at /usr/sbin/ninja
+>>> Source configured.
+>>> Compiling source in /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0 ...
+meson compile -C /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build --jobs 28 --load-average 0 --verbose
+ninja: Entering directory `/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build'
+[1/5] clang -Isrc/libwayland-util.a.p -Isrc -I../wayland-1.21.0/src -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O0 -D_POSIX_C_SOURCE=200809L -Wno-unused-parameter -Wstrict-prototypes -Wmissing-prototypes -fvisibility=hidden -march=native -O2 -flto -fdiagnostics-color=always -fPIC -MD -MQ src/libwayland-util.a.p/wayland-util.c.o -MF src/libwayland-util.a.p/wayland-util.c.o.d -o src/libwayland-util.a.p/wayland-util.c.o -c ../wayland-1.21.0/src/wayland-util.c
+[2/5] rm -f src/libwayland-util.a && x86_64-pc-linux-gnu-ar csrDT src/libwayland-util.a src/libwayland-util.a.p/wayland-util.c.o
+[3/5] /usr/lib/python-exec/python3.10/meson --internal exe --capture src/wayland.dtd.h -- /usr/bin/python3.10 /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/src/embed.py ../wayland-1.21.0/src/../protocol/wayland.dtd wayland_dtd
+[4/5] clang -Isrc/wayland-scanner.p -Isrc -I../wayland-1.21.0/src -I. -I../wayland-1.21.0 -I../wayland-1.21.0/protocol -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -O0 -D_POSIX_C_SOURCE=200809L -Wno-unused-parameter -Wstrict-prototypes -Wmissing-prototypes -fvisibility=hidden -march=native -O2 -flto -fdiagnostics-color=always -include config.h -MD -MQ src/wayland-scanner.p/scanner.c.o -MF src/wayland-scanner.p/scanner.c.o.d -o src/wayland-scanner.p/scanner.c.o -c ../wayland-1.21.0/src/scanner.c
+[5/5] clang  -o src/wayland-scanner src/wayland-scanner.p/scanner.c.o -Wl,--as-needed -Wl,--no-undefined -march=native -O2 -flto -fdiagnostics-color=always -fuse-ld=lld -Wl,--icf=all -Wl,--start-group src/libwayland-util.a /usr/lib64/libexpat.so -Wl,--end-group
+>>> Source compiled.
+>>> Test phase: dev-util/wayland-scanner-1.21.0
+meson test --print-errorlogs -C /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build --num-processes 28
+No tests defined.
+>>> Completed testing dev-util/wayland-scanner-1.21.0
+
+>>> Install dev-util/wayland-scanner-1.21.0 into /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image
+meson install -C /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build --destdir /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image
+ninja: Entering directory `/etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build'
+ninja: no work to do.
+Installing src/wayland-scanner to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/bin
+Installing /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-scanner-1.21.0-build/meson-private/wayland-scanner.pc to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/lib64/pkgconfig
+Installing /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/wayland-scanner.mk to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/share/wayland
+Installing /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/protocol/wayland.xml to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/share/wayland
+Installing /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/protocol/wayland.dtd to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/share/wayland
+Installing /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/work/wayland-1.21.0/wayland-scanner.m4 to /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image/usr/share/aclocal
+>>> Completed installing dev-util/wayland-scanner-1.21.0 into /etc/portage/package.tmp/portage/dev-util/wayland-scanner-1.21.0/image
+
+ * Final size of build directory: 2288 KiB (2.2 MiB)
+ * Final size of installed tree:   196 KiB
+
+strip: x86_64-pc-linux-gnu-strip --strip-unneeded -N __gentoo_check_ldflags__ -R .comment -R .GCC.command.line -R .note.gnu.gold-version
+   /usr/bin/wayland-scanner
