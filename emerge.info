@@ -1,0 +1,112 @@
+Portage 3.0.38.1 (python 3.10.8-final-0, default/linux/amd64/17.1, gcc-12, glibc-2.36-r5, 5.19.16-lqx1-clang x86_64)
+=================================================================
+System uname: Linux-5.19.16-lqx1-clang-x86_64-AMD_Ryzen_9_3950X_16-Core_Processor-with-glibc2.36
+KiB Mem:    32800380 total,  28582568 free
+KiB Swap:          0 total,         0 free
+Head commit of repository gentoo: 41355d5ee50bb0cb7af9058f0af753a7cf73d602
+
+Head commit of repository audio-overlay: 61a8ceb241d1eedffa190373816b0b4fbd8d095b
+
+Head commit of repository brave-overlay: b123eae082a78d6269d4fc5545cd7dd05d0f30a3
+
+Head commit of repository cg: 4c71b4f53cb2cf1cdc0fc3b39a049b2d22d7be8e
+
+Head commit of repository guru: 4717b9f676774eb3f4224cbdd848c05ef11ef40b
+
+Head commit of repository src_prepare-overlay: d116c5e067cad45fd0d4a64525e5c57c305e4f29
+
+Head commit of repository steam-overlay: 226725c26fa7f88b72889a494139342ca1729f82
+
+sh bash 5.1_p16-r2
+ld GNU ld (Gentoo 2.39 p5) 2.39.0
+app-misc/pax-utils:        1.3.5::gentoo
+app-shells/bash:           5.1_p16-r2::gentoo
+dev-lang/perl:             5.36.0-r1::gentoo
+dev-lang/python:           3.10.8_p3::gentoo
+dev-lang/rust-bin:         1.65.0::gentoo
+dev-util/cmake:            3.24.3::gentoo
+dev-util/meson:            9999::gentoo
+sys-apps/baselayout:       2.9::gentoo
+sys-apps/sandbox:          2.29::gentoo
+sys-apps/systemd:          252.1::gentoo
+sys-devel/autoconf:        2.71-r4::gentoo
+sys-devel/automake:        1.16.5::gentoo
+sys-devel/binutils:        2.39-r4::gentoo
+sys-devel/binutils-config: 5.4.1::gentoo
+sys-devel/clang:           15.0.5::gentoo
+sys-devel/gcc:             11.3.1_p20221007::gentoo, 12.2.1_p20221008::gentoo
+sys-devel/gcc-config:      2.8::gentoo
+sys-devel/libtool:         2.4.7::gentoo
+sys-devel/lld:             15.0.5::gentoo
+sys-devel/llvm:            15.0.5::gentoo
+sys-devel/make:            4.4::gentoo
+sys-kernel/linux-headers:  6.0::gentoo (virtual/os-headers)
+sys-libs/glibc:            2.36-r5::gentoo
+Repositories:
+
+gentoo
+    location: /etc/portage/repos/gentoo
+    sync-type: git
+    sync-uri: https://anongit.gentoo.org/git/repo/gentoo.git
+    priority: 0
+    eclass-overrides: unhappy-ending
+
+guru
+    location: /etc/portage/repos/guru
+    sync-type: git
+    sync-uri: https://gitweb.gentoo.org/repo/proj/guru
+    masters: gentoo
+    priority: 50
+    eclass-overrides: guru
+
+unhappy-ending
+    location: /etc/portage/repos/unhappy-ending
+    masters: gentoo
+    priority: 100
+    eclass-overrides: unhappy-ending
+
+Installed sets: 
+ACCEPT_KEYWORDS="amd64 ~amd64"
+ACCEPT_LICENSE="*"
+ADDR2LINE="llvm-addr2line"
+AR="llvm-ar"
+AS="llvm-as"
+CBUILD="x86_64-pc-linux-gnu"
+CC="clang"
+CFLAGS="-O2 -pipe"
+CHOST="x86_64-pc-linux-gnu"
+CONFIG_PROTECT="/etc /usr/share/config"
+CONFIG_PROTECT_MASK="/etc/ca-certificates.conf /etc/dconf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d"
+CPP="clang-cpp"
+CXX="clang++"
+CXXFILT="llvm-cxxfilt"
+CXXFLAGS="-O2 -pipe"
+DISTDIR="/etc/portage/package.distfiles"
+EMERGE_DEFAULT_OPTS="-a -j28 -l28 --alphabetical --autounmask=n --columns --quiet-build --quiet-unmerge-warn --with-test-deps=n"
+ENV_UNSET="CARGO_HOME DBUS_SESSION_BUS_ADDRESS DISPLAY GOBIN GOPATH PERL5LIB PERL5OPT PERLPREFIX PERL_CORE PERL_MB_OPT PERL_MM_OPT XAUTHORITY XDG_CACHE_HOME XDG_CONFIG_HOME XDG_DATA_HOME XDG_RUNTIME_DIR XDG_STATE_HOME"
+FCFLAGS="-O2 -pipe"
+FEATURES="assume-digests binpkg-docompress binpkg-dostrip binpkg-logs buildpkg-live candy config-protect-if-modified distlocks ebuild-locks fail-clean fixlafiles ipc-sandbox merge-sync multilib-strict network-sandbox news parallel-fetch pid-sandbox preserve-libs protect-owned qa-unresolved-soname-deps sandbox sfperms split-log strict unknown-features-warn unmerge-orphans userfetch userpriv usersandbox usersync xattr"
+FFLAGS="-O2 -pipe"
+GCOV="llvm-cov"
+GENTOO_MIRRORS="http://distfiles.gentoo.org /etc/portage/package.mirrors"
+LANG="en_US.utf8"
+LD="ld.lld"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+LINGUAS="*"
+MAKEOPTS="-j28 -l28"
+NM="llvm-nm"
+OBJCOPY="llvm-objcopy"
+OBJDUMP="llvm-objdump"
+PKGDIR="/etc/portage/package.distfiles/bin"
+PORTAGE_BINHOST="https://calculate.mirror.garr.it/grp/x86_64"
+PORTAGE_CONFIGROOT="/"
+PORTAGE_RSYNC_OPTS="--recursive --links --safe-links --perms --times --omit-dir-times --compress --force --whole-file --delete --stats --human-readable --timeout=180 --exclude=/distfiles --exclude=/local --exclude=/packages --exclude=/.git"
+PORTAGE_TMPDIR="/etc/portage/package.tmp"
+RANLIB="llvm-ranlib"
+READELF="llvm-readelf"
+SHELL="/bin/bash"
+SIZE="llvm-size"
+STRINGS="llvm-strings"
+STRIP="llvm-strip"
+USE="acl aes amd64 avx avx2 bzip2 cli crypt dri f16c fma3 fortran gdbm iconv ipv6 libglvnd libtirpc mmx mmxext multilib ncurses nls nptl openmp pam pclmul pcre popcnt rdrand readline seccomp sha split-usr sse sse2 sse3 sse4_1 sse4_2 sse4a ssl ssse3 test-rust unicode xattr zlib" ABI_X86="32 64" ADA_TARGET="gnat_2021" ALSA_CARDS="emu10k1 emu1212 emu1616" CALLIGRA_FEATURES="karbon sheets words" CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3" ELIBC="glibc" GRUB_PLATFORMS="efi-64" INPUT_DEVICES="libinput wacom" KERNEL="linux" L10N="*" LLVM_TARGETS="BPF NVPTX X86" LUA_SINGLE_TARGET="lua5-4" LUA_TARGETS="lua5-4" PHP_TARGETS="php8-1" POSTGRES_TARGETS="postgres14" PYTHON_SINGLE_TARGET="python3_10" PYTHON_TARGETS="python3_10" RUBY_TARGETS="ruby27" USERLAND="GNU" VIDEO_CARDS="nouveau nvidia"
+Unset:  ARFLAGS, ASFLAGS, CCLD, CONFIG_SHELL, CPPFLAGS, CTARGET, ELFEDIT, EXTRA_ECONF, F77FLAGS, FC, GPROF, INSTALL_MASK, LC_ALL, LEX, LFLAGS, LIBTOOL, MAKE, MAKEFLAGS, PORTAGE_BUNZIP2_COMMAND, PORTAGE_COMPRESS, PORTAGE_COMPRESS_FLAGS, PORTAGE_RSYNC_EXTRA_OPTS, RUSTFLAGS, YACC, YFLAGS
