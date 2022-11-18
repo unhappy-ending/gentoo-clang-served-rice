@@ -2,7 +2,7 @@ diff --git a/kernel-module-source/utils.mk b/kernel-module-source/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/kernel-module-source/utils.mk
 +++ b/kernel-module-source/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -16,7 +16,7 @@ diff --git a/nvidia-installer-525.53/utils.mk b/nvidia-installer-525.53/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-installer-525.53/utils.mk
 +++ b/nvidia-installer-525.53/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -30,7 +30,7 @@ diff --git a/nvidia-modprobe/utils.mk b/nvidia-modprobe/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-modprobe/utils.mk
 +++ b/nvidia-modprobe/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -44,7 +44,7 @@ diff --git a/nvidia-persistenced/utils.mk b/nvidia-persistenced/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-persistenced/utils.mk
 +++ b/nvidia-persistenced/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -58,7 +58,7 @@ diff --git a/nvidia-settings/src/libXNVCtrl/utils.mk b/nvidia-settings/src/libXN
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-settings/src/libXNVCtrl/utils.mk
 +++ b/nvidia-settings/src/libXNVCtrl/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -72,7 +72,7 @@ diff --git a/nvidia-settings/utils.mk b/nvidia-settings/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-settings/utils.mk
 +++ b/nvidia-settings/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
@@ -86,7 +86,7 @@ diff --git a/nvidia-xconfig/utils.mk b/nvidia-xconfig/utils.mk
 index 17421ba9f840..749d09da8ec1 100644
 --- a/nvidia-xconfig/utils.mk
 +++ b/nvidia-xconfig/utils.mk
-@@ -569,7 +569,7 @@
+@@ -569,7 +569,7 @@ define READ_ONLY_OBJECT_FROM_FILE_RULE
   $$(OUTPUTDIR)/$$(notdir $(1)).o: $(1)
 	$(at_if_quiet)$$(MKDIR) $$(OUTPUTDIR)
 	$(at_if_quiet)cd $$(dir $(1)); \
