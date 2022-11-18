@@ -1,0 +1,292 @@
+[32m * [39;49;00mPackage:    sys-fs/fuse-3.12.0:3
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: base-system@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_32 abi_x86_64 amd64 elibc_glibc kernel_linux suid userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox userpriv usersandbox
+[32m * [39;49;00mPackage:    sys-fs/fuse-3.12.0:3
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: base-system@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_32 abi_x86_64 amd64 elibc_glibc kernel_linux suid userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking fuse-3.12.0.tar.xz to /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work
+>>> Source unpacked in /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work
+>>> Preparing source in /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0 ...
+>>> Source prepared.
+>>> Configuring source in /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0 ...
+ [32m*[0m abi_x86_32.x86: running multilib-minimal_abi_src_configure
+meson setup --libdir lib --localstatedir /var/lib --prefix /usr --sysconfdir /etc --wrap-mode nodownload --build.pkg-config-path /usr/share/pkgconfig:/usr/share/pkgconfig --pkg-config-path /usr/share/pkgconfig:/usr/share/pkgconfig --native-file /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/temp/meson.i686-pc-linux-gnu.x86.ini -Db_pch=false -Dwerror=false --buildtype plain -Dexamples=false -Dtests=false -Duseroot=false -Dudevrulesdir=/usr/lib/udev/rules.d /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0 /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_32.x86
+The Meson build system
+Version: 0.63.99
+Source dir: /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0
+Build dir: /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_32.x86
+Build type: native build
+Project name: libfuse3
+Project version: 3.12.0
+C compiler for the host machine: clang -m32 -mfpmath=sse (clang 15.0.5 "clang version 15.0.5")
+C linker for the host machine: clang -m32 -mfpmath=sse ld.lld 15.0.5
+Host machine cpu family: x86
+Host machine cpu: i686
+Checking for function "fork" : YES 
+Checking for function "fstatat" : YES 
+Checking for function "openat" : YES 
+Checking for function "readlinkat" : YES 
+Checking for function "pipe2" : YES 
+Checking for function "splice" : YES 
+Checking for function "vmsplice" : YES 
+Checking for function "posix_fallocate" : YES 
+Checking for function "fdatasync" : YES 
+Checking for function "utimensat" : YES 
+Checking for function "copy_file_range" : YES 
+Checking for function "fallocate" : YES 
+Checking for function "setxattr" : YES 
+Checking for function "iconv" : YES 
+Checking whether type "struct stat" has member "st_atim" : YES 
+Checking whether type "struct stat" has member "st_atimespec" : NO 
+Configuring config.h using configuration
+Message: Compiler does not support symver attribute
+Run-time dependency threads found: YES
+Library iconv found: NO
+Library dl found: YES
+Library rt found: YES
+Build targets in project: 3
+
+libfuse3 3.12.0
+
+  User defined options
+    Native files         : /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/temp/meson.i686-pc-linux-gnu.x86.ini
+    build.pkg_config_path: /usr/share/pkgconfig:/usr/share/pkgconfig
+    buildtype            : plain
+    libdir               : lib
+    localstatedir        : /var/lib
+    pkg_config_path      : /usr/share/pkgconfig:/usr/share/pkgconfig
+    prefix               : /usr
+    sysconfdir           : /etc
+    werror               : false
+    wrap_mode            : nodownload
+    b_pch                : false
+    examples             : false
+    tests                : false
+    udevrulesdir         : /usr/lib/udev/rules.d
+    useroot              : false
+
+Found ninja-1.11.1 at /usr/sbin/ninja
+ [32m*[0m abi_x86_64.amd64: running multilib-minimal_abi_src_configure
+meson setup --libdir lib64 --localstatedir /var/lib --prefix /usr --sysconfdir /etc --wrap-mode nodownload --build.pkg-config-path /usr/share/pkgconfig --pkg-config-path /usr/share/pkgconfig --native-file /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini -Db_pch=false -Dwerror=false --buildtype plain -Dexamples=false -Dtests=false -Duseroot=false -Dudevrulesdir=/usr/lib/udev/rules.d /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0 /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_64.amd64
+The Meson build system
+Version: 0.63.99
+Source dir: /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0
+Build dir: /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_64.amd64
+Build type: native build
+Project name: libfuse3
+Project version: 3.12.0
+C compiler for the host machine: clang (clang 15.0.5 "clang version 15.0.5")
+C linker for the host machine: clang ld.lld 15.0.5
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for function "fork" : YES 
+Checking for function "fstatat" : YES 
+Checking for function "openat" : YES 
+Checking for function "readlinkat" : YES 
+Checking for function "pipe2" : YES 
+Checking for function "splice" : YES 
+Checking for function "vmsplice" : YES 
+Checking for function "posix_fallocate" : YES 
+Checking for function "fdatasync" : YES 
+Checking for function "utimensat" : YES 
+Checking for function "copy_file_range" : YES 
+Checking for function "fallocate" : YES 
+Checking for function "setxattr" : YES 
+Checking for function "iconv" : YES 
+Checking whether type "struct stat" has member "st_atim" : YES 
+Checking whether type "struct stat" has member "st_atimespec" : NO 
+Configuring config.h using configuration
+Message: Compiler does not support symver attribute
+Run-time dependency threads found: YES
+Library iconv found: NO
+Library dl found: YES
+Library rt found: YES
+Build targets in project: 3
+
+libfuse3 3.12.0
+
+  User defined options
+    Native files         : /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/temp/meson.x86_64-pc-linux-gnu.amd64.ini
+    build.pkg_config_path: /usr/share/pkgconfig
+    buildtype            : plain
+    libdir               : lib64
+    localstatedir        : /var/lib
+    pkg_config_path      : /usr/share/pkgconfig
+    prefix               : /usr
+    sysconfdir           : /etc
+    werror               : false
+    wrap_mode            : nodownload
+    b_pch                : false
+    examples             : false
+    tests                : false
+    udevrulesdir         : /usr/lib/udev/rules.d
+    useroot              : false
+
+Found ninja-1.11.1 at /usr/sbin/ninja
+>>> Source configured.
+>>> Compiling source in /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0 ...
+ [32m*[0m abi_x86_32.x86: running multilib-minimal_abi_src_compile
+meson compile -C /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_32.x86 --jobs 28 --load-average 28 --verbose
+[1/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_log.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_log.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_log.c.o -c ../fuse-3.12.0/lib/fuse_log.c
+[2/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_loop.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_loop.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_loop.c.o -c ../fuse-3.12.0/lib/fuse_loop.c
+[3/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_signals.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_signals.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_signals.c.o -c ../fuse-3.12.0/lib/fuse_signals.c
+[4/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/mount_util.c.o -MF lib/libfuse3.so.3.12.0.p/mount_util.c.o.d -o lib/libfuse3.so.3.12.0.p/mount_util.c.o -c ../fuse-3.12.0/lib/mount_util.c
+../fuse-3.12.0/lib/mount_util.c:364:10: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+            len == strlen(mountpoint)) {
+            ~~~ ^  ~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[5/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o -MF lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o.d -o lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o -c ../fuse-3.12.0/lib/cuse_lowlevel.c
+[6/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/helper.c.o -MF lib/libfuse3.so.3.12.0.p/helper.c.o.d -o lib/libfuse3.so.3.12.0.p/helper.c.o -c ../fuse-3.12.0/lib/helper.c
+[7/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o -c ../fuse-3.12.0/lib/fuse_loop_mt.c
+[8/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -MF lib/libfuse3.so.3.12.0.p/modules_iconv.c.o.d -o lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -c ../fuse-3.12.0/lib/modules/iconv.c
+[9/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/buffer.c.o -MF lib/libfuse3.so.3.12.0.p/buffer.c.o.d -o lib/libfuse3.so.3.12.0.p/buffer.c.o -c ../fuse-3.12.0/lib/buffer.c
+../fuse-3.12.0/lib/buffer.c:149:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+                if (res < this_len)
+                    ~~~ ^ ~~~~~~~~
+../fuse-3.12.0/lib/buffer.c:319:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+                if (res < len)
+                    ~~~ ^ ~~~
+2 warnings generated.
+[10/21] clang -m32 -mfpmath=sse -Iutil/mount.fuse3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -DFUSE_USE_VERSION=312 -MD -MQ util/mount.fuse3.p/mount.fuse.c.o -MF util/mount.fuse3.p/mount.fuse.c.o.d -o util/mount.fuse3.p/mount.fuse.c.o -c ../fuse-3.12.0/util/mount.fuse.c
+[11/21] clang -m32 -mfpmath=sse -Iutil/fusermount3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra '-DFUSE_CONF="/etc/fuse.conf"' -MD -MQ util/fusermount3.p/.._lib_mount_util.c.o -MF util/fusermount3.p/.._lib_mount_util.c.o.d -o util/fusermount3.p/.._lib_mount_util.c.o -c ../fuse-3.12.0/lib/mount_util.c
+../fuse-3.12.0/lib/mount_util.c:364:10: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+            len == strlen(mountpoint)) {
+            ~~~ ^  ~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[12/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_opt.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_opt.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_opt.c.o -c ../fuse-3.12.0/lib/fuse_opt.c
+[13/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/modules_subdir.c.o -MF lib/libfuse3.so.3.12.0.p/modules_subdir.c.o.d -o lib/libfuse3.so.3.12.0.p/modules_subdir.c.o -c ../fuse-3.12.0/lib/modules/subdir.c
+[14/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/mount.c.o -MF lib/libfuse3.so.3.12.0.p/mount.c.o.d -o lib/libfuse3.so.3.12.0.p/mount.c.o -c ../fuse-3.12.0/lib/mount.c
+[15/21] clang -m32 -mfpmath=sse -Iutil/fusermount3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra '-DFUSE_CONF="/etc/fuse.conf"' -MD -MQ util/fusermount3.p/fusermount.c.o -MF util/fusermount3.p/fusermount.c.o.d -o util/fusermount3.p/fusermount.c.o -c ../fuse-3.12.0/util/fusermount.c
+../fuse-3.12.0/util/fusermount.c:700:16: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+        for (i = 0; i < len; i++) {
+                    ~ ^ ~~~
+../fuse-3.12.0/util/fusermount.c:701:29: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+                if (s[i] == '\\' && i + 1 < len)
+                                    ~~~~~ ^ ~~~
+../fuse-3.12.0/util/fusermount.c:717:19: warning: comparison of integers of different signs: 'unsigned int' and 'long' [-Wsign-compare]
+        if (strlen(data) > sysconf(_SC_PAGESIZE) - 1) {
+            ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+../fuse-3.12.0/util/fusermount.c:1025:3: warning: implicit conversion from 'long long' to 'typeof (fs_buf.f_type)' (aka 'int') changes value from 8315462406243767374 to 1397118030 [-Wconstant-conversion]
+                0x736675005346544e /* UFSD */,
+                ^~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[16/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o -c ../fuse-3.12.0/lib/fuse_lowlevel.c
+../fuse-3.12.0/lib/fuse_lowlevel.c:609:10: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+        if (res != len) {
+            ~~~ ^  ~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:715:10: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+        if (res != headerlen) {
+            ~~~ ^  ~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:750:22: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+        if (res != 0 && res < len) {
+                        ~~~ ^ ~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:827:10: warning: comparison of integers of different signs: 'int' and 'uint32_t' (aka 'unsigned int') [-Wsign-compare]
+        if (res != out->len) {
+            ~~~ ^  ~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2814:10: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'unsigned int' [-Wsign-compare]
+        if (res < sizeof(struct fuse_in_header)) {
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2830:10: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'unsigned int' [-Wsign-compare]
+        if (res < sizeof(struct fuse_in_header) +
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2854:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+                if (res < tmpbuf.size) {
+                    ~~~ ^ ~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2859:14: warning: comparison of integers of different signs: 'ssize_t' (aka 'int') and 'size_t' (aka 'unsigned int') [-Wsign-compare]
+                assert(res == tmpbuf.size);
+                       ~~~ ^  ~~~~~~~~~~~
+/usr/include/assert.h:106:11: note: expanded from macro 'assert'
+      if (expr)                                                         \
+          ^~~~
+8 warnings generated.
+[17/21] clang -m32 -mfpmath=sse  -o util/fusermount3 util/fusermount3.p/fusermount.c.o util/fusermount3.p/.._lib_mount_util.c.o -Wl,--as-needed -Wl,--no-undefined -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0
+[18/21] clang -m32 -mfpmath=sse -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse.c.o -MF lib/libfuse3.so.3.12.0.p/fuse.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse.c.o -c ../fuse-3.12.0/lib/fuse.c
+[19/21] clang -m32 -mfpmath=sse  -o lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0.p/fuse.c.o lib/libfuse3.so.3.12.0.p/fuse_loop.c.o lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o lib/libfuse3.so.3.12.0.p/fuse_opt.c.o lib/libfuse3.so.3.12.0.p/fuse_signals.c.o lib/libfuse3.so.3.12.0.p/buffer.c.o lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o lib/libfuse3.so.3.12.0.p/helper.c.o lib/libfuse3.so.3.12.0.p/modules_subdir.c.o lib/libfuse3.so.3.12.0.p/mount_util.c.o lib/libfuse3.so.3.12.0.p/fuse_log.c.o lib/libfuse3.so.3.12.0.p/mount.c.o lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libfuse3.so.3 -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0 -Wl,--version-script,/etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0/lib/fuse_versionscript -pthread -ldl -lrt -Wl,--end-group
+[20/21] /usr/lib/python-exec/python3.10/meson --internal symbolextractor /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_32.x86 lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0.p/libfuse3.so.3.12.0.symbols 
+[21/21] clang -m32 -mfpmath=sse  -o util/mount.fuse3 util/mount.fuse3.p/mount.fuse.c.o -Wl,--as-needed -Wl,--no-undefined -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0 '-Wl,-rpath,$ORIGIN/../lib' -Wl,-rpath-link,/etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_32.x86/lib -Wl,--start-group lib/libfuse3.so.3.12.0 -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/sbin/ninja -j 28 -l 28.0 -v
+ [32m*[0m abi_x86_64.amd64: running multilib-minimal_abi_src_compile
+meson compile -C /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_64.amd64 --jobs 28 --load-average 28 --verbose
+[1/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_log.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_log.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_log.c.o -c ../fuse-3.12.0/lib/fuse_log.c
+[2/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_loop.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_loop.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_loop.c.o -c ../fuse-3.12.0/lib/fuse_loop.c
+[3/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_signals.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_signals.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_signals.c.o -c ../fuse-3.12.0/lib/fuse_signals.c
+[4/21] clang -Iutil/fusermount3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra '-DFUSE_CONF="/etc/fuse.conf"' -MD -MQ util/fusermount3.p/.._lib_mount_util.c.o -MF util/fusermount3.p/.._lib_mount_util.c.o.d -o util/fusermount3.p/.._lib_mount_util.c.o -c ../fuse-3.12.0/lib/mount_util.c
+../fuse-3.12.0/lib/mount_util.c:364:10: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+            len == strlen(mountpoint)) {
+            ~~~ ^  ~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[5/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o -MF lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o.d -o lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o -c ../fuse-3.12.0/lib/cuse_lowlevel.c
+[6/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/helper.c.o -MF lib/libfuse3.so.3.12.0.p/helper.c.o.d -o lib/libfuse3.so.3.12.0.p/helper.c.o -c ../fuse-3.12.0/lib/helper.c
+[7/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o -c ../fuse-3.12.0/lib/fuse_loop_mt.c
+[8/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -MF lib/libfuse3.so.3.12.0.p/modules_iconv.c.o.d -o lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -c ../fuse-3.12.0/lib/modules/iconv.c
+[9/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/buffer.c.o -MF lib/libfuse3.so.3.12.0.p/buffer.c.o.d -o lib/libfuse3.so.3.12.0.p/buffer.c.o -c ../fuse-3.12.0/lib/buffer.c
+../fuse-3.12.0/lib/buffer.c:149:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+                if (res < this_len)
+                    ~~~ ^ ~~~~~~~~
+../fuse-3.12.0/lib/buffer.c:319:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+                if (res < len)
+                    ~~~ ^ ~~~
+2 warnings generated.
+[10/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/mount.c.o -MF lib/libfuse3.so.3.12.0.p/mount.c.o.d -o lib/libfuse3.so.3.12.0.p/mount.c.o -c ../fuse-3.12.0/lib/mount.c
+[11/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/mount_util.c.o -MF lib/libfuse3.so.3.12.0.p/mount_util.c.o.d -o lib/libfuse3.so.3.12.0.p/mount_util.c.o -c ../fuse-3.12.0/lib/mount_util.c
+../fuse-3.12.0/lib/mount_util.c:364:10: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+            len == strlen(mountpoint)) {
+            ~~~ ^  ~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[12/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_opt.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_opt.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_opt.c.o -c ../fuse-3.12.0/lib/fuse_opt.c
+[13/21] clang -Iutil/mount.fuse3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -DFUSE_USE_VERSION=312 -MD -MQ util/mount.fuse3.p/mount.fuse.c.o -MF util/mount.fuse3.p/mount.fuse.c.o.d -o util/mount.fuse3.p/mount.fuse.c.o -c ../fuse-3.12.0/util/mount.fuse.c
+[14/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/modules_subdir.c.o -MF lib/libfuse3.so.3.12.0.p/modules_subdir.c.o.d -o lib/libfuse3.so.3.12.0.p/modules_subdir.c.o -c ../fuse-3.12.0/lib/modules/subdir.c
+[15/21] clang -Iutil/fusermount3.p -Iutil -I../fuse-3.12.0/util -Iinclude -I../fuse-3.12.0/include -Ilib -I../fuse-3.12.0/lib -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra '-DFUSE_CONF="/etc/fuse.conf"' -MD -MQ util/fusermount3.p/fusermount.c.o -MF util/fusermount3.p/fusermount.c.o.d -o util/fusermount3.p/fusermount.c.o -c ../fuse-3.12.0/util/fusermount.c
+../fuse-3.12.0/util/fusermount.c:700:16: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+        for (i = 0; i < len; i++) {
+                    ~ ^ ~~~
+../fuse-3.12.0/util/fusermount.c:701:29: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+                if (s[i] == '\\' && i + 1 < len)
+                                    ~~~~~ ^ ~~~
+../fuse-3.12.0/util/fusermount.c:717:19: warning: comparison of integers of different signs: 'unsigned long' and 'long' [-Wsign-compare]
+        if (strlen(data) > sysconf(_SC_PAGESIZE) - 1) {
+            ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+[16/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o -MF lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o -c ../fuse-3.12.0/lib/fuse_lowlevel.c
+../fuse-3.12.0/lib/fuse_lowlevel.c:609:10: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+        if (res != len) {
+            ~~~ ^  ~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:715:10: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+        if (res != headerlen) {
+            ~~~ ^  ~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:750:22: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+        if (res != 0 && res < len) {
+                        ~~~ ^ ~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:827:10: warning: comparison of integers of different signs: 'int' and 'uint32_t' (aka 'unsigned int') [-Wsign-compare]
+        if (res != out->len) {
+            ~~~ ^  ~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2814:10: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+        if (res < sizeof(struct fuse_in_header)) {
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2830:10: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+        if (res < sizeof(struct fuse_in_header) +
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2854:11: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+                if (res < tmpbuf.size) {
+                    ~~~ ^ ~~~~~~~~~~~
+../fuse-3.12.0/lib/fuse_lowlevel.c:2859:14: warning: comparison of integers of different signs: 'ssize_t' (aka 'long') and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+                assert(res == tmpbuf.size);
+                       ~~~ ^  ~~~~~~~~~~~
+/usr/include/assert.h:106:11: note: expanded from macro 'assert'
+      if (expr)                                                         \
+          ^~~~
+8 warnings generated.
+[17/21] clang  -o util/fusermount3 util/fusermount3.p/fusermount.c.o util/fusermount3.p/.._lib_mount_util.c.o -Wl,--as-needed -Wl,--no-undefined -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0
+[18/21] clang -Ilib/libfuse3.so.3.12.0.p -Ilib -I../fuse-3.12.0/lib -Iinclude -I../fuse-3.12.0/include -I. -I../fuse-3.12.0 -fcolor-diagnostics -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -D_REENTRANT -DHAVE_CONFIG_H -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -fno-strict-aliasing -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fPIC -pthread -DFUSE_USE_VERSION=312 '-DFUSERMOUNT_DIR="/usr/bin"' -MD -MQ lib/libfuse3.so.3.12.0.p/fuse.c.o -MF lib/libfuse3.so.3.12.0.p/fuse.c.o.d -o lib/libfuse3.so.3.12.0.p/fuse.c.o -c ../fuse-3.12.0/lib/fuse.c
+[19/21] clang  -o lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0.p/fuse.c.o lib/libfuse3.so.3.12.0.p/fuse_loop.c.o lib/libfuse3.so.3.12.0.p/fuse_loop_mt.c.o lib/libfuse3.so.3.12.0.p/fuse_lowlevel.c.o lib/libfuse3.so.3.12.0.p/fuse_opt.c.o lib/libfuse3.so.3.12.0.p/fuse_signals.c.o lib/libfuse3.so.3.12.0.p/buffer.c.o lib/libfuse3.so.3.12.0.p/cuse_lowlevel.c.o lib/libfuse3.so.3.12.0.p/helper.c.o lib/libfuse3.so.3.12.0.p/modules_subdir.c.o lib/libfuse3.so.3.12.0.p/mount_util.c.o lib/libfuse3.so.3.12.0.p/fuse_log.c.o lib/libfuse3.so.3.12.0.p/mount.c.o lib/libfuse3.so.3.12.0.p/modules_iconv.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libfuse3.so.3 -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0 -Wl,--version-script,/etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0/lib/fuse_versionscript -pthread -ldl -lrt -Wl,--end-group
+[20/21] /usr/lib/python-exec/python3.10/meson --internal symbolextractor /etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_64.amd64 lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0 lib/libfuse3.so.3.12.0.p/libfuse3.so.3.12.0.symbols 
+[21/21] clang  -o util/mount.fuse3 util/mount.fuse3.p/mount.fuse.c.o -Wl,--as-needed -Wl,--no-undefined -march=native -O3 -pipe -flto -fdiagnostics-color=always -frecord-gcc-switches -Wall -Werror=format-security -Werror=implicit-function-declaration -Werror=odr -Werror=incompatible-library-redeclaration -Wextra -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--defsym=__gentoo_check_ldflags__=0 '-Wl,-rpath,$ORIGIN/../lib' -Wl,-rpath-link,/etc/portage/package.tmp/portage/sys-fs/fuse-3.12.0/work/fuse-3.12.0-abi_x86_64.amd64/lib -Wl,--start-group lib/libfuse3.so.3.12.0 -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/sbin/ninja -j 28 -l 28.0 -v
+>>> Source compiled.
