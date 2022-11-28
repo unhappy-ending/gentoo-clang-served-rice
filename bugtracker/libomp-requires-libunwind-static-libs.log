@@ -1,0 +1,433 @@
+[32m * [39;49;00mPackage:    sys-libs/libomp-14.0.6
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: voyageur@gentoo.org llvm@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_32 abi_x86_64 amd64 elibc_glibc kernel_linux llvm_targets_NVPTX test userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+ [32m*[0m Determining the location of the kernel source code
+ [32m*[0m Found kernel source directory:
+ [32m*[0m     /usr/src/linux
+ [32m*[0m Found sources for kernel version:
+ [32m*[0m     5.18.3-zen1
+[32m * [39;49;00mPackage:    sys-libs/libomp-14.0.6
+[32m * [39;49;00mRepository: gentoo
+[32m * [39;49;00mMaintainer: voyageur@gentoo.org llvm@gentoo.org
+[32m * [39;49;00mUSE:        abi_x86_32 abi_x86_64 amd64 elibc_glibc kernel_linux llvm_targets_NVPTX test userland_GNU
+[32m * [39;49;00mFEATURES:   network-sandbox preserve-libs sandbox test userpriv usersandbox
+ [32m*[0m Checking whether python3_10 is suitable ...
+ [32m*[0m   >=dev-lang/python-3.10.4:3.10 ...
+[A[265C [34;01m[ [32;01mok[34;01m ][0m
+ [32m*[0m   python_check_deps ...
+[A[265C [34;01m[ [32;01mok[34;01m ][0m
+ [32m*[0m Using python3.10 to build (via PYTHON_COMPAT iteration)
+>>> Unpacking source...
+ [32m*[0m Unpacking from llvm-project-14.0.6.src.tar.xz ...
+[A[265C [34;01m[ [32;01mok[34;01m ][0m
+>>> Source unpacked in /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work
+>>> Preparing source in /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp ...
+ [32m*[0m Source directory (CMAKE_USE_DIR): "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp"
+ [32m*[0m Build directory  (BUILD_DIR):     "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build"
+ [32m*[0m Hardcoded definition(s) removed in CMakeLists.txt:
+ [32m*[0m      set(CMAKE_BUILD_TYPE Release)
+>>> Source prepared.
+>>> Configuring source in /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp ...
+ [32m*[0m abi_x86_32.x86: running multilib-minimal_abi_src_configure
+ [32m*[0m Source directory (CMAKE_USE_DIR): "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp"
+ [32m*[0m Build directory  (BUILD_DIR):     "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86"
+cmake -C /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/gentoo_common_config.cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DOPENMP_LIBDIR_SUFFIX= -DLIBOMP_USE_HWLOC=no -DLIBOMP_OMPT_SUPPORT=no -DOPENMP_ENABLE_LIBOMPTARGET=no -DLIBOMP_INSTALL_ALIASES=OFF -DLIBOMP_COPY_EXPORTS=OFF -DOPENMP_LLVM_LIT_EXECUTABLE=/usr/bin/lit -DOPENMP_LIT_ARGS=-vv;-j;28 -DOPENMP_TEST_C_COMPILER=/usr/lib/llvm/14/bin/i686-pc-linux-gnu-clang -DOPENMP_TEST_CXX_COMPILER=/usr/lib/llvm/14/bin/i686-pc-linux-gnu-clang++ -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE=/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/gentoo_toolchain.cmake /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp
+loading initial cache file /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/gentoo_common_config.cmake
+-- The C compiler identification is Clang 14.0.6
+-- The CXX compiler identification is Clang 14.0.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/llvm/14/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/llvm/14/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test OPENMP_HAVE_WALL_FLAG
+-- Performing Test OPENMP_HAVE_WALL_FLAG - Success
+-- Performing Test OPENMP_HAVE_WERROR_FLAG
+-- Performing Test OPENMP_HAVE_WERROR_FLAG - Success
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG - Success
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG - Success
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG - Success
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_EXTRA_FLAG
+-- Performing Test OPENMP_HAVE_WNO_EXTRA_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_PEDANTIC_FLAG
+-- Performing Test OPENMP_HAVE_WNO_PEDANTIC_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_MAYBE_UNINITIALIZED_FLAG
+-- Performing Test OPENMP_HAVE_WNO_MAYBE_UNINITIALIZED_FLAG - Failed
+-- Performing Test OPENMP_HAVE_STD_CPP14_FLAG
+-- Performing Test OPENMP_HAVE_STD_CPP14_FLAG - Success
+-- Found PythonInterp: /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/temp/python3.10/bin/python (found version "3.10.5") 
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG - Success
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_CLASS_MEMACCESS_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_CLASS_MEMACCESS_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_FRAME_ADDRESS_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_FRAME_ADDRESS_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_STRICT_ALIASING_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_STRICT_ALIASING_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_STRINGOP_TRUNCATION_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_STRINGOP_TRUNCATION_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_SWITCH_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_SWITCH_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_UNINITIALIZED_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_UNINITIALIZED_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_UNUSED_BUT_SET_VARIABLE_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_UNUSED_BUT_SET_VARIABLE_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_RETURN_TYPE_C_LINKAGE_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_RETURN_TYPE_C_LINKAGE_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_CAST_QUAL_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_CAST_QUAL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_INT_TO_VOID_POINTER_CAST_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_INT_TO_VOID_POINTER_CAST_FLAG - Success
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG - Success
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_M32_FLAG
+-- Performing Test LIBOMP_HAVE_M32_FLAG - Success
+-- Looking for shm_open
+-- Looking for shm_open - found
+-- Looking for xmmintrin.h
+-- Looking for xmmintrin.h - found
+-- Performing Test LIBOMP_HAVE__MM_MALLOC
+-- Performing Test LIBOMP_HAVE__MM_MALLOC - Success
+-- Looking for aligned_alloc
+-- Looking for aligned_alloc - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - not found
+-- Performing Test LIBOMP_HAVE_X_FLAG
+-- Performing Test LIBOMP_HAVE_X_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG
+-- Performing Test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG - Success
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG - Success
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG - Success
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_RTM
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_RTM - Success
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_WAITPKG
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_WAITPKG - Success
+-- Performing Test LIBOMP_HAVE_WAITPKG_INTRINSICS
+-- Performing Test LIBOMP_HAVE_WAITPKG_INTRINSICS - Success
+-- Performing Test LIBOMP_HAVE_RTM_INTRINSICS
+-- Performing Test LIBOMP_HAVE_RTM_INTRINSICS - Success
+-- Found Perl: /usr/sbin/perl (found version "5.36.0") 
+-- Performing Test LIBOMP_HAVE_VERSION_SYMBOLS
+-- Performing Test LIBOMP_HAVE_VERSION_SYMBOLS - Success
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS - Success
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE - Success
+-- Performing Test LIBOMP_HAVE_PSAPI
+-- Performing Test LIBOMP_HAVE_PSAPI - Failed
+CMake Warning at runtime/cmake/LibompUtils.cmake:20 (message):
+  LIBOMP: OpenMP Debug Interface(OMPD) requested but not available in this
+  implementation
+Call Stack (most recent call first):
+  runtime/CMakeLists.txt:336 (libomp_warning_say)
+
+
+-- LIBOMP: Operating System     -- Linux
+-- LIBOMP: Target Architecture  -- i386
+-- LIBOMP: Build Type           -- RelWithDebInfo
+-- LIBOMP: Library Kind         -- SHARED
+-- LIBOMP: Library Type         -- normal
+-- LIBOMP: Fortran Modules      -- FALSE
+-- LIBOMP: Build                -- 20140926
+-- LIBOMP: Use Stats-gathering  -- FALSE
+-- LIBOMP: Use Debugger-support -- FALSE
+-- LIBOMP: Use ITT notify       -- TRUE
+-- LIBOMP: Use OMPT-support     -- no
+-- LIBOMP: Use OMPD-support     -- FALSE
+-- LIBOMP: Use Adaptive locks   -- TRUE
+-- LIBOMP: Use quad precision   -- FALSE
+-- LIBOMP: Use Hwloc library    -- no
+-- Looking for sqrt in m
+-- Looking for sqrt in m - found
+-- Looking for __atomic_load_1
+-- Looking for __atomic_load_1 - not found
+-- Looking for __atomic_load_1 in atomic
+-- Looking for __atomic_load_1 in atomic - found
+-- <<< Gentoo configuration >>>
+Build type      RelWithDebInfo
+Install path    /usr
+Compiler flags:
+C               -march=native -O3 -pipe -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic
+C++             -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14
+Linker flags:
+Executable      -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+Module          -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+Shared          -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86
+ [32m*[0m abi_x86_64.amd64: running multilib-minimal_abi_src_configure
+ [32m*[0m Source directory (CMAKE_USE_DIR): "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp"
+ [32m*[0m Build directory  (BUILD_DIR):     "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_64.amd64"
+cmake -C /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_64.amd64/gentoo_common_config.cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DOPENMP_LIBDIR_SUFFIX=64 -DLIBOMP_USE_HWLOC=no -DLIBOMP_OMPT_SUPPORT=no -DOPENMP_ENABLE_LIBOMPTARGET=no -DLIBOMP_INSTALL_ALIASES=OFF -DLIBOMP_COPY_EXPORTS=OFF -DOPENMP_LLVM_LIT_EXECUTABLE=/usr/bin/lit -DOPENMP_LIT_ARGS=-vv;-j;28 -DOPENMP_TEST_C_COMPILER=/usr/lib/llvm/14/bin/x86_64-pc-linux-gnu-clang -DOPENMP_TEST_CXX_COMPILER=/usr/lib/llvm/14/bin/x86_64-pc-linux-gnu-clang++ -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE=/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_64.amd64/gentoo_toolchain.cmake /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp
+loading initial cache file /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_64.amd64/gentoo_common_config.cmake
+-- The C compiler identification is Clang 14.0.6
+-- The CXX compiler identification is Clang 14.0.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/llvm/14/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/llvm/14/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test OPENMP_HAVE_WALL_FLAG
+-- Performing Test OPENMP_HAVE_WALL_FLAG - Success
+-- Performing Test OPENMP_HAVE_WERROR_FLAG
+-- Performing Test OPENMP_HAVE_WERROR_FLAG - Success
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG - Success
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG - Success
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG - Success
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_EXTRA_FLAG
+-- Performing Test OPENMP_HAVE_WNO_EXTRA_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_PEDANTIC_FLAG
+-- Performing Test OPENMP_HAVE_WNO_PEDANTIC_FLAG - Success
+-- Performing Test OPENMP_HAVE_WNO_MAYBE_UNINITIALIZED_FLAG
+-- Performing Test OPENMP_HAVE_WNO_MAYBE_UNINITIALIZED_FLAG - Failed
+-- Performing Test OPENMP_HAVE_STD_CPP14_FLAG
+-- Performing Test OPENMP_HAVE_STD_CPP14_FLAG - Success
+-- Found PythonInterp: /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/temp/python3.10/bin/python (found version "3.10.5") 
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG - Success
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_CLASS_MEMACCESS_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_CLASS_MEMACCESS_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_FRAME_ADDRESS_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_FRAME_ADDRESS_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_STRICT_ALIASING_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_STRICT_ALIASING_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_STRINGOP_TRUNCATION_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_STRINGOP_TRUNCATION_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_WNO_SWITCH_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_SWITCH_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_UNINITIALIZED_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_UNINITIALIZED_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_UNUSED_BUT_SET_VARIABLE_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_UNUSED_BUT_SET_VARIABLE_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_RETURN_TYPE_C_LINKAGE_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_RETURN_TYPE_C_LINKAGE_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_CAST_QUAL_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_CAST_QUAL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WNO_INT_TO_VOID_POINTER_CAST_FLAG
+-- Performing Test LIBOMP_HAVE_WNO_INT_TO_VOID_POINTER_CAST_FLAG - Success
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG - Success
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG - Failed
+-- Performing Test LIBOMP_HAVE_M32_FLAG
+-- Performing Test LIBOMP_HAVE_M32_FLAG - Success
+-- Looking for shm_open
+-- Looking for shm_open - found
+-- Looking for xmmintrin.h
+-- Looking for xmmintrin.h - found
+-- Performing Test LIBOMP_HAVE__MM_MALLOC
+-- Performing Test LIBOMP_HAVE__MM_MALLOC - Success
+-- Looking for aligned_alloc
+-- Looking for aligned_alloc - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - not found
+-- Performing Test LIBOMP_HAVE_X_FLAG
+-- Performing Test LIBOMP_HAVE_X_FLAG - Success
+-- Performing Test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG
+-- Performing Test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG - Success
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG - Success
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG - Success
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG - Success
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_RTM
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_RTM - Success
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_WAITPKG
+-- Performing Test LIBOMP_HAVE_ATTRIBUTE_WAITPKG - Success
+-- Performing Test LIBOMP_HAVE_WAITPKG_INTRINSICS
+-- Performing Test LIBOMP_HAVE_WAITPKG_INTRINSICS - Success
+-- Performing Test LIBOMP_HAVE_RTM_INTRINSICS
+-- Performing Test LIBOMP_HAVE_RTM_INTRINSICS - Success
+-- Found Perl: /usr/sbin/perl (found version "5.36.0") 
+-- Performing Test LIBOMP_HAVE_VERSION_SYMBOLS
+-- Performing Test LIBOMP_HAVE_VERSION_SYMBOLS - Success
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS - Success
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE - Success
+-- Performing Test LIBOMP_HAVE_PSAPI
+-- Performing Test LIBOMP_HAVE_PSAPI - Failed
+CMake Warning at runtime/cmake/LibompUtils.cmake:20 (message):
+  LIBOMP: OpenMP Debug Interface(OMPD) requested but not available in this
+  implementation
+Call Stack (most recent call first):
+  runtime/CMakeLists.txt:336 (libomp_warning_say)
+
+
+-- LIBOMP: Operating System     -- Linux
+-- LIBOMP: Target Architecture  -- x86_64
+-- LIBOMP: Build Type           -- RelWithDebInfo
+-- LIBOMP: Library Kind         -- SHARED
+-- LIBOMP: Library Type         -- normal
+-- LIBOMP: Fortran Modules      -- FALSE
+-- LIBOMP: Build                -- 20140926
+-- LIBOMP: Use Stats-gathering  -- FALSE
+-- LIBOMP: Use Debugger-support -- FALSE
+-- LIBOMP: Use ITT notify       -- TRUE
+-- LIBOMP: Use OMPT-support     -- no
+-- LIBOMP: Use OMPD-support     -- FALSE
+-- LIBOMP: Use Adaptive locks   -- TRUE
+-- LIBOMP: Use quad precision   -- FALSE
+-- LIBOMP: Use Hwloc library    -- no
+-- Looking for sqrt in m
+-- Looking for sqrt in m - found
+-- Looking for __atomic_load_1
+-- Looking for __atomic_load_1 - not found
+-- Looking for __atomic_load_1 in atomic
+-- Looking for __atomic_load_1 in atomic - found
+-- <<< Gentoo configuration >>>
+Build type      RelWithDebInfo
+Install path    /usr
+Compiler flags:
+C               -march=native -O3 -pipe -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic
+C++             -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14
+Linker flags:
+Executable      -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+Module          -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+Shared          -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_64.amd64
+>>> Source configured.
+>>> Compiling source in /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp ...
+ [32m*[0m abi_x86_32.x86: running multilib-minimal_abi_src_compile
+ [32m*[0m Source directory (CMAKE_USE_DIR): "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp"
+ [32m*[0m Build directory  (BUILD_DIR):     "/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86"
+ninja -v -j28 -l0
+[1/34] cd /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src && /usr/sbin/perl /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/tools/message-converter.pl --os=lin --prefix=kmp_i18n --enum=kmp_i18n_id.inc /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n/en_US.txt
+[2/34] cd /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src && /usr/sbin/perl /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/tools/message-converter.pl --os=lin --prefix=kmp_i18n --default=kmp_i18n_default.inc /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n/en_US.txt
+[3/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_io.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_io.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_io.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_io.cpp
+[4/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_i18n.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_i18n.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_i18n.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_i18n.cpp
+[5/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/thirdparty/ittnotify/ittnotify_static.cpp.o -MF runtime/src/CMakeFiles/omp.dir/thirdparty/ittnotify/ittnotify_static.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/thirdparty/ittnotify/ittnotify_static.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify/ittnotify_static.cpp
+[6/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_global.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_global.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_global.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_global.cpp
+[7/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_taskdeps.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_taskdeps.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_taskdeps.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_taskdeps.cpp
+[8/34] /usr/lib/llvm/14/bin/clang -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -x assembler-with-cpp -MD -MT runtime/src/CMakeFiles/omp.dir/z_Linux_asm.S.o -MF runtime/src/CMakeFiles/omp.dir/z_Linux_asm.S.o.d -o runtime/src/CMakeFiles/omp.dir/z_Linux_asm.S.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/z_Linux_asm.S
+[9/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_cancel.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_cancel.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_cancel.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_cancel.cpp
+[10/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_debug.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_debug.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_debug.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_debug.cpp
+[11/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_environment.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_environment.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_environment.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_environment.cpp
+[12/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_threadprivate.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_threadprivate.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_threadprivate.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_threadprivate.cpp
+[13/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_utility.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_utility.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_utility.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_utility.cpp
+[14/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_error.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_error.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_error.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_error.cpp
+[15/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_str.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_str.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_str.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_str.cpp
+[16/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_itt.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_itt.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_itt.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_itt.cpp
+[17/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_ftn_cdecl.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_ftn_cdecl.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_ftn_cdecl.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_ftn_cdecl.cpp
+[18/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_wait_release.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_wait_release.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_wait_release.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_wait_release.cpp
+[19/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_alloc.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_alloc.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_alloc.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_alloc.cpp
+[20/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_csupport.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_csupport.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_csupport.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_csupport.cpp
+[21/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_sched.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_sched.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_sched.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_sched.cpp
+[22/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_version.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_version.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_version.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_version.cpp
+[23/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_ftn_extra.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_ftn_extra.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_ftn_extra.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_ftn_extra.cpp
+[24/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/z_Linux_util.cpp.o -MF runtime/src/CMakeFiles/omp.dir/z_Linux_util.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/z_Linux_util.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/z_Linux_util.cpp
+[25/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_lock.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_lock.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_lock.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_lock.cpp
+[26/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_gsupport.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_gsupport.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_gsupport.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_gsupport.cpp
+[27/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_barrier.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_barrier.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_barrier.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_barrier.cpp
+[28/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_atomic.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_atomic.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_atomic.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_atomic.cpp
+[29/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_tasking.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_tasking.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_tasking.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_tasking.cpp
+[30/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_dispatch.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_dispatch.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_dispatch.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_dispatch.cpp
+[31/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_runtime.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_runtime.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_runtime.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_runtime.cpp
+[32/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_affinity.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_affinity.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_affinity.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_affinity.cpp
+[33/34] /usr/lib/llvm/14/bin/clang++ -m32 -Domp_EXPORTS -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/i18n -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/include -I/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/thirdparty/ittnotify -U_FORTIFY_SOURCE -DNDEBUG -march=native -O3 -pipe -stdlib=libc++ -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic -std=c++14 -fPIC   -D _GNU_SOURCE -D _REENTRANT -U_FORTIFY_SOURCE -DNDEBUG -fno-exceptions -fno-rtti -Wno-covered-switch-default -Wno-frame-address -Wno-strict-aliasing -Wno-switch -Wno-uninitialized -Wno-unused-but-set-variable -Wno-return-type-c-linkage -Wno-cast-qual -Wno-int-to-void-pointer-cast -msse2 -MD -MT runtime/src/CMakeFiles/omp.dir/kmp_settings.cpp.o -MF runtime/src/CMakeFiles/omp.dir/kmp_settings.cpp.o.d -o runtime/src/CMakeFiles/omp.dir/kmp_settings.cpp.o -c /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/kmp_settings.cpp
+[34/34] : && /usr/lib/llvm/14/bin/clang -m32 -fPIC -march=native -O3 -pipe -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic  -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind  -Wl,--warn-shared-textrel -Wl,--as-needed -Wl,--version-script=/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/exports_so.txt -static-libgcc -Wl,-z,noexecstack -msse2 -shared -Wl,-soname,libomp.so -o runtime/src/libomp.so runtime/src/CMakeFiles/omp.dir/kmp_alloc.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_atomic.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_csupport.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_debug.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_itt.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_environment.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_error.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_global.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_i18n.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_io.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_runtime.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_settings.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_str.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_tasking.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_threadprivate.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_utility.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_barrier.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_wait_release.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_affinity.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_dispatch.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_lock.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_sched.cpp.o runtime/src/CMakeFiles/omp.dir/z_Linux_util.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_gsupport.cpp.o runtime/src/CMakeFiles/omp.dir/thirdparty/ittnotify/ittnotify_static.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_taskdeps.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_cancel.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_ftn_cdecl.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_ftn_extra.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_version.cpp.o runtime/src/CMakeFiles/omp.dir/z_Linux_asm.S.o  -ldl && cd /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src && /usr/bin/cmake -E create_symlink libomp.so libgomp.so && /usr/bin/cmake -E create_symlink libomp.so libiomp5.so
+FAILED: runtime/src/libomp.so 
+: && /usr/lib/llvm/14/bin/clang -m32 -fPIC -march=native -O3 -pipe -Wall -Wcast-qual -Wformat-pedantic -Wimplicit-fallthrough -Wsign-compare -Wno-extra -Wno-pedantic  -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind  -Wl,--warn-shared-textrel -Wl,--as-needed -Wl,--version-script=/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp/runtime/src/exports_so.txt -static-libgcc -Wl,-z,noexecstack -msse2 -shared -Wl,-soname,libomp.so -o runtime/src/libomp.so runtime/src/CMakeFiles/omp.dir/kmp_alloc.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_atomic.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_csupport.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_debug.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_itt.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_environment.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_error.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_global.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_i18n.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_io.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_runtime.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_settings.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_str.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_tasking.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_threadprivate.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_utility.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_barrier.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_wait_release.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_affinity.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_dispatch.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_lock.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_sched.cpp.o runtime/src/CMakeFiles/omp.dir/z_Linux_util.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_gsupport.cpp.o runtime/src/CMakeFiles/omp.dir/thirdparty/ittnotify/ittnotify_static.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_taskdeps.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_cancel.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_ftn_cdecl.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_ftn_extra.cpp.o runtime/src/CMakeFiles/omp.dir/kmp_version.cpp.o runtime/src/CMakeFiles/omp.dir/z_Linux_asm.S.o  -ldl && cd /etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86/runtime/src && /usr/bin/cmake -E create_symlink libomp.so libgomp.so && /usr/bin/cmake -E create_symlink libomp.so libiomp5.so
+ld.lld: error: unable to find library -l:libunwind.a
+ld.lld: error: unable to find library -l:libunwind.a
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+ [31;01m*[0m ERROR: sys-libs/libomp-14.0.6::gentoo failed (compile phase):
+ [31;01m*[0m   ninja -v -j28 -l0 failed
+ [31;01m*[0m 
+ [31;01m*[0m Call stack:
+ [31;01m*[0m     ebuild.sh, line  127:  Called src_compile
+ [31;01m*[0m   environment, line 4322:  Called cmake-multilib_src_compile
+ [31;01m*[0m   environment, line 1486:  Called multilib-minimal_src_compile
+ [31;01m*[0m   environment, line 3176:  Called multilib_foreach_abi 'multilib-minimal_abi_src_compile'
+ [31;01m*[0m   environment, line 3443:  Called multibuild_foreach_variant '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_compile'
+ [31;01m*[0m   environment, line 3136:  Called _multibuild_run '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_compile'
+ [31;01m*[0m   environment, line 3134:  Called _multilib_multibuild_wrapper 'multilib-minimal_abi_src_compile'
+ [31;01m*[0m   environment, line  620:  Called multilib-minimal_abi_src_compile
+ [31;01m*[0m   environment, line 3170:  Called multilib_src_compile
+ [31;01m*[0m   environment, line 3655:  Called cmake_src_compile
+ [31;01m*[0m   environment, line 1597:  Called cmake_build
+ [31;01m*[0m   environment, line 1566:  Called eninja
+ [31;01m*[0m   environment, line 2017:  Called die
+ [31;01m*[0m The specific snippet of code:
+ [31;01m*[0m       "$@" || die "${nonfatal_args[@]}" "${*} failed"
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=sys-libs/libomp-14.0.6::gentoo'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=sys-libs/libomp-14.0.6::gentoo'`.
+ [31;01m*[0m The complete build log is located at '/etc/portage/package.log/build/sys-libs/libomp-14.0.6:20220712-234427.log'.
+ [31;01m*[0m For convenience, a symlink to the build log is located at '/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/temp/environment'.
+ [31;01m*[0m Working directory: '/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp_build-abi_x86_32.x86'
+ [31;01m*[0m S: '/etc/portage/package.tmp/portage/sys-libs/libomp-14.0.6/work/openmp'
