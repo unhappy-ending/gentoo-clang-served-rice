@@ -1,0 +1,4 @@
+# test phase fails with USE=-rar
+# test phase fails with -Wl,--lto-whole-program-visibility (segfault)
+#
+LDFLAGS="${LDFLAGS} -Wl,--no-lto-whole-program-visibility"
