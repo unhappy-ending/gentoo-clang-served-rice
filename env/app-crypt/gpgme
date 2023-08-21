@@ -1,0 +1,7 @@
+# compile phase fails with -fuse-ld=lld
+# 	use workaround -Xcompiler -fuse-ld=lld
+# compile phase fails with -Werror=incompatible-library-redeclaration
+#
+CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"
+# workarounds
+LDFLAGS="${LDFLAGS} -Xcompiler -fuse-ld=lld"

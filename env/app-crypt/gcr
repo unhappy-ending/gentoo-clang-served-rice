@@ -1,0 +1,4 @@
+# test phase fails (+8/44)
+# 	tested against chroot; fails (+7/44)
+# 	more with -flto (+1)
+#

@@ -1,0 +1,6 @@
+# compile phase fails with -fuse-ld=lld
+#	use workaround -Xcompiler -fuse-ld=lld
+# test phase fails (+1)
+# 	tested against chroot; fails (+1)
+#
+LDFLAGS="${LDFLAGS} -Xcompiler -fuse-ld=lld"
