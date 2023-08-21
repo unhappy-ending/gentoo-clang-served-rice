@@ -1,0 +1,10 @@
+# complie phase fails with -fuse-ld=lld
+#	use workaround ${CFLAGS} -fuse-ld=lld
+# compile phase fails with -Werror=incompatible-library-redeclaration
+# test phase fails with -ffast-math (+40/311088)
+#
+CFLAGS="${CFLAGS} -fno-fast-math"
+# diagnostics
+CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"
+# workarounds
+CFLAGS="${CFLAGS} -fuse-ld=lld"
