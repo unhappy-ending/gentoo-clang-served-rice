@@ -1,0 +1,8 @@
+# issues with -flto
+# 	remove -fvirtual-function-elimination
+# 	remove -fwhole-program-vtables
+#
+CFLAGS="${CFLAGS} -fno-lto"
+CXXFLAGS="${CXXFLAGS} -fno-lto"
+CXXFLAGS="${CXXFLAGS} -fno-virtual-function-elimination"
+CXXFLAGS="${CXXFLAGS} -fno-whole-program-vtables"
