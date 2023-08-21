@@ -1,0 +1,6 @@
+# compile phase fails with -Werror=incompatible-library-redeclaration
+# test phase fails with -Wl,--lto-whole-program-visibility (+segfault/368)
+#
+LDFLAGS="${LDFLAGS} -Wl,--no-lto-whole-program-visibility"
+# diagnostics
+CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"
