@@ -1,0 +1,4 @@
+# test phase fails with -ffunction-sections
+# 	use workaround -Wl,-z,nostart-stop-gc"
+#
+LDFLAGS="${LDFLAGS} -Wl,-z,nostart-stop-gc"
