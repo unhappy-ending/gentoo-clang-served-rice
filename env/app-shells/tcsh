@@ -1,0 +1,5 @@
+# compile phase fails with -Werror=incompatible-library-redeclaration
+# test phase fails (+1/190)
+# 	tested against chroot; fails (+1/190)
+#
+CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"
