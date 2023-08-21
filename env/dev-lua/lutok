@@ -1,0 +1,7 @@
+# compile phase fails with -fuse-ld=lld
+# 	use workaround -Xcompiler -fuse-ld=lld"
+# test phase fails with -Wl,--lto-whole-program-visibility (+6/10)
+#
+LDFLAGS="${LDFLAGS} -Wl,--no-lto-whole-program-visibility"
+# workarounds
+LDFLAGS="${LDFLAGS} -Xcompiler -fuse-ld=lld"
