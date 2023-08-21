@@ -1,0 +1,4 @@
+# compile phase fails with -fuse-ld=lld
+#	use workaround -Xcompiler -fuse-ld=lld
+#
+LDFLAGS="${LDFLAGS} -Xcompiler -fuse-ld=lld"
