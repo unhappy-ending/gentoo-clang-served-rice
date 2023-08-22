@@ -1,0 +1,6 @@
+# compile phase fails with -ffast-math
+# test phase fails (+2/174)
+# 	tested against chroot; (+2/174)
+#
+CFLAGS="${CFLAGS} -fno-fast-math"
+CXXFLAGS="${CXXFLAGS} -fno-fast-math"
