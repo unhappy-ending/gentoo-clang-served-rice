@@ -1,0 +1,8 @@
+# strip-flags
+# 	use workaround _FLAG_O_MATIC_ECLASS=1
+# test phase fails with -ffast-math (+1/194)
+#
+CFLAGS="${CFLAGS} -fno-fast-math"
+CXXFLAGS="${CXXFLAGS} -fno-fast-math"
+# workarounds
+_FLAG_O_MATIC_ECLASS=1

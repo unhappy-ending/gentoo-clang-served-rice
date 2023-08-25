@@ -1,0 +1,3 @@
+# test phase fails with x11-libs/gdk-pixbuf[jpeg] (+1/22)
+# 	tested against chroot; fails (+1/22)
+#

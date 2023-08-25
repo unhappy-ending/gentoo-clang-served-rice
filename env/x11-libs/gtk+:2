@@ -1,0 +1,12 @@
+# strip-flags
+# 	use workaround _FLAG_O_MATIC_ECLASS=1
+# compile phase fails
+# 	use workaround -std=gnu89
+# compile phase fails with -Werror=implicit-function-declaration
+# test phase fails (+1/2)
+# 	tested against chroot; fails (+1/2)
+#
+CFLAGS="${CFLAGS} -Wno-error=implicit-function-declaration"
+# workarounds
+_FLAG_O_MATIC_ECLASS=1
+CFLAGS="${CFLAGS} -std=gnu89"
