@@ -1,0 +1,906 @@
+%PDF-1.3
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Contents 4 0 R>>
+endobj
+4 0 obj
+<</Length 1525>>
+stream
+2 J
+0.57 w
+q 206.93 0 0 107.72 195.59 493.23 cm /I1 Do Q
+BT /F1 14.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 473.38 538.58 -5.67 re f q 0.000 0.333 0.000 rg BT 199.63 466.35 Td (www.phoronix-test-suite.com) Tj ET Q
+BT /F1 21.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 402.52 538.58 -17.01 re f q 0.000 g BT 259.14 387.71 Td (Himeno) Tj ET Q
+BT /F2 10.00 Tf ET
+0.520 Tw
+q 0.000 g BT 31.19 349.91 Td (AMD Ryzen 9 3950X 16-Core testing with a ASRock X570S PG Riptide \(P5.60 BIOS\) and NVIDIA GeForce RTX 3070) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 335.74 Td (8GB on Gentoo 2.15 via the Phoronix Test Suite.) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F1 16.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 260.78 538.58 -17.01 re f q 0.000 g BT 31.19 247.48 Td (Test Systems:) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 218.26 538.58 -5.67 re f q 0.000 g BT 31.19 211.53 Td (-march=znver2) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 189.92 538.58 -5.67 re f q 0.000 g BT 31.19 183.18 Td (-O2) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 161.57 538.58 -5.67 re f q 0.000 g BT 31.19 154.84 Td (-O3) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 133.23 538.58 -5.67 re f q 0.000 g BT 31.19 126.49 Td (-fcf-protection=none) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 104.88 538.58 -5.67 re f q 0.000 g BT 31.19 98.14 Td (-fdata-sections) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 76.53 538.58 -5.67 re f q 0.000 g BT 31.19 69.80 Td (-fdirect-access-external-data) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots [<</Type /Annot /Subtype /Link /Rect [466.08 31.85 564.09 24.85] /Border [0 0 0] /A <</S /URI /URI (http://www.phoronix-test-suite.com/)>>>>]
+/Contents 6 0 R>>
+endobj
+6 0 obj
+<</Length 5582>>
+stream
+2 J
+0.57 w
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+q 85.04 0 0 44.13 28.35 775.08 cm /I2 Do Q
+BT /F1 14.00 Tf ET
+q 0.000 g BT 271.97 795.17 Td (Himeno) Tj ET Q
+BT /F1 10.00 Tf ET
+q 0.000 g BT 297.64 779.36 Td () Tj ET Q
+0.020 0.486 0.651 RG
+28.35 765.35 m 566.93 765.35 l S
+BT /F1 13.00 Tf ET
+0 G
+28.35 754.01 538.58 -5.67 re f q 0.000 g BT 31.19 747.28 Td (-ffp-contract=fast) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 725.67 538.58 -5.67 re f q 0.000 g BT 31.19 718.93 Td (-ffast-math) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 697.32 538.58 -5.67 re f q 0.000 g BT 31.19 690.58 Td (-ffunction-sections) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 668.97 538.58 -5.67 re f q 0.000 g BT 31.19 662.24 Td (-flto) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 640.63 538.58 -5.67 re f q 0.000 g BT 31.19 633.89 Td (-fno-common) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 612.28 538.58 -5.67 re f q 0.000 g BT 31.19 605.55 Td (-fno-plt) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 583.93 538.58 -5.67 re f q 0.000 g BT 31.19 577.20 Td (-fno-sanitize=all) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 555.59 538.58 -5.67 re f q 0.000 g BT 31.19 548.85 Td (-fno-semantic-interposition) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 527.24 538.58 -5.67 re f q 0.000 g BT 31.19 520.51 Td (-fno-stack-protector) Tj ET Q
+BT /F1 13.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 498.89 538.58 -5.67 re f q 0.000 g BT 31.19 492.16 Td (-O2 -ffast-math) Tj ET Q
+BT /F2 10.00 Tf ET
+1.653 Tw
+q 0.000 g BT 31.19 474.63 Td (Processor: AMD Ryzen 9 3950X 16-Core @ 4.76GHz \(16 Cores\), Motherboard: ASRock X570S PG Riptide \(P5.60) Tj ET Q
+3.535 Tw
+q 0.000 g BT 31.19 460.46 Td (BIOS\), Chipset: AMD Starship/Matisse, Memory: 4 x 8GB DDR4-3200MT/s F4-3200C16-8GTZR, Disk: 2000GB) Tj ET Q
+2.805 Tw
+q 0.000 g BT 31.19 446.29 Td (Samsung SSD 970 EVO Plus 2TB + 2 x 500GB Samsung SSD 850 + 2000GB Seagate ST2000DM001-1ER1,) Tj ET Q
+0.088 Tw
+q 0.000 g BT 31.19 432.11 Td (Graphics: NVIDIA GeForce RTX 3070 8GB, Audio: NVIDIA GA104 HD Audio, Monitor: VX238 + marantz-AVR, Network:) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 417.94 Td (Realtek Killer E3000 2.5GbE) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 10.00 Tf ET
+0.391 Tw
+q 0.000 g BT 31.19 389.60 Td (OS: Gentoo 2.15, Kernel: 6.9.3-clang \(x86_64\), Desktop: KDE Plasma 6.0.90, Display Server: Wayland, Display Driver:) Tj ET Q
+0.565 Tw
+q 0.000 g BT 31.19 375.42 Td (NVIDIA 550.78, OpenGL: 4.6.0, OpenCL: OpenCL 3.0 CUDA 12.4.131, Compiler: GCC 13.3.0 + Clang 18.1.6+libcxx +) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 361.25 Td (CUDA 12.4, File-System: xfs) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 7.00 Tf ET
+q 0.000 g BT 31.19 336.64 Td (Environment Notes: __GL_SYNC_DISPLAY_DEVICE=HDMI-0 __GL_YIELD= WINEDEBUG=-all) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 7.00 Tf ET
+9.443 Tw
+q 0.000 g BT 31.19 328.13 Td (Compiler Notes: --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/13 --build=x86_64-pc-linux-gnu --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/13 --disable-cet) Tj ET Q
+1.668 Tw
+q 0.000 g BT 31.19 319.63 Td (--disable-default-ssp --disable-dependency-tracking --disable-fixed-point --disable-fixincludes --disable-libada --disable-libsanitizer --disable-libssp --disable-libstdcxx-pch) Tj ET Q
+8.302 Tw
+q 0.000 g BT 31.19 311.13 Td (--disable-libunwind-exceptions --disable-libvtv --disable-silent-rules --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-werror) Tj ET Q
+3.068 Tw
+q 0.000 g BT 31.19 302.62 Td (--enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-languages=c,c++,fortran --enable-libgomp --enable-libstdcxx-time) Tj ET Q
+2.158 Tw
+q 0.000 g BT 31.19 294.12 Td (--enable-lto --enable-multilib --enable-nls --enable-obsolete --enable-secureplt --enable-shared --enable-targets=all --enable-threads=posix --host=x86_64-pc-linux-gnu) Tj ET Q
+38.388 Tw
+q 0.000 g BT 31.19 285.61 Td (--includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/13/include --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/13/man --with-build-config=bootstrap-O3) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 277.11 Td (--with-gcc-major-version-only --with-multilib-list=m32,m64 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/13/python --without-isl --without-zstd) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 7.00 Tf ET
+q 0.000 g BT 31.19 268.61 Td (Processor Notes: Scaling Governor: amd-pstate-epp performance \(EPP: performance\) - CPU Microcode: 0x8701030) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 7.00 Tf ET
+0.459 Tw
+q 0.000 g BT 31.19 260.10 Td (Security Notes: gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not) Tj ET Q
+0.976 Tw
+q 0.000 g BT 31.19 251.60 Td (affected + reg_file_data_sampling: Not affected + retbleed: Vulnerable + spec_rstack_overflow: Vulnerable + spec_store_bypass: Vulnerable + spectre_v1: Vulnerable:) Tj ET Q
+0.549 Tw
+q 0.000 g BT 31.19 243.09 Td (__user pointer sanitization and usercopy barriers only; no swapgs barriers + spectre_v2: Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI:) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 234.59 Td (Not affected + srbds: Not affected + tsx_async_abort: Not affected) Tj ET Q
+BT /F2 10.00 Tf ET
+BT /F2 9.00 Tf ET
+0.133 0.133 0.133 RG
+0.85 w
+BT /F2 9.00 Tf ET
+0.020 0.486 0.651 RG
+28.35 42.52 m 566.93 42.52 l S
+BT /F1 7.00 Tf ET
+q 0.000 g BT 31.19 26.25 Td (Phoronix Test Suite v10.8.5) Tj ET Q
+566.93 28.35 0.00 0.00 re f q 0.000 g BT 466.08 26.25 Td (www.phoronix-test-suite.com) Tj ET Q
+
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots [<</Type /Annot /Subtype /Link /Rect [466.08 31.85 564.09 24.85] /Border [0 0 0] /A <</S /URI /URI (http://www.phoronix-test-suite.com/)>>>>]
+/Contents 8 0 R>>
+endobj
+8 0 obj
+<</Length 9616>>
+stream
+2 J
+0.85 w
+BT /F2 9.00 Tf ET
+0.133 0.133 0.133 RG
+1.000 1.000 1.000 rg
+q 85.04 0 0 44.13 28.35 775.08 cm /I2 Do Q
+BT /F1 14.00 Tf ET
+q 0.000 g BT 271.97 795.17 Td (Himeno) Tj ET Q
+BT /F1 10.00 Tf ET
+q 0.000 g BT 297.64 779.36 Td () Tj ET Q
+0.020 0.486 0.651 RG
+28.35 765.35 m 566.93 765.35 l S
+BT /F2 9.00 Tf ET
+0.133 0.133 0.133 RG
+0.000 g
+BT /F1 9.00 Tf ET
+28.35 754.01 62.36 -70.87 re f
+q 1.000 1.000 1.000 rg BT 85.38 744.23 Td ( ) Tj ET Q
+90.71 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 93.55 744.23 Td (-marc) Tj ET Q
+q 1.000 1.000 1.000 rg BT 93.55 730.05 Td (h=zn) Tj ET Q
+q 1.000 1.000 1.000 rg BT 93.55 715.88 Td (ver2) Tj ET Q
+121.89 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 124.73 744.23 Td (-O2) Tj ET Q
+153.07 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 155.91 744.23 Td (-O3) Tj ET Q
+184.26 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 187.09 744.23 Td (-fcf-p) Tj ET Q
+q 1.000 1.000 1.000 rg BT 187.09 730.05 Td (rotect) Tj ET Q
+q 1.000 1.000 1.000 rg BT 187.09 715.88 Td (ion=n) Tj ET Q
+q 1.000 1.000 1.000 rg BT 187.09 701.71 Td (one) Tj ET Q
+215.44 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 218.27 744.23 Td (-fdata) Tj ET Q
+q 1.000 1.000 1.000 rg BT 218.27 730.05 Td (-secti) Tj ET Q
+q 1.000 1.000 1.000 rg BT 218.27 715.88 Td (ons) Tj ET Q
+246.62 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 249.45 744.23 Td (-fdire) Tj ET Q
+q 1.000 1.000 1.000 rg BT 249.45 730.05 Td (ct-ac) Tj ET Q
+q 1.000 1.000 1.000 rg BT 249.45 715.88 Td (cess-) Tj ET Q
+q 1.000 1.000 1.000 rg BT 249.45 701.71 Td (exter) Tj ET Q
+q 1.000 1.000 1.000 rg BT 249.45 687.53 Td (nal-d) Tj ET Q
+q 1.000 1.000 1.000 rg BT 249.45 673.36 Td (ata) Tj ET Q
+277.80 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 280.63 744.23 Td (-ffp-c) Tj ET Q
+q 1.000 1.000 1.000 rg BT 280.63 730.05 Td (ontra) Tj ET Q
+q 1.000 1.000 1.000 rg BT 280.63 715.88 Td (ct=fa) Tj ET Q
+q 1.000 1.000 1.000 rg BT 280.63 701.71 Td (st) Tj ET Q
+308.98 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 311.81 744.23 Td (-ffast-) Tj ET Q
+q 1.000 1.000 1.000 rg BT 311.81 730.05 Td (math) Tj ET Q
+340.16 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 343.00 744.23 Td (-ffunc) Tj ET Q
+q 1.000 1.000 1.000 rg BT 343.00 730.05 Td (tion-s) Tj ET Q
+q 1.000 1.000 1.000 rg BT 343.00 715.88 Td (ectio) Tj ET Q
+q 1.000 1.000 1.000 rg BT 343.00 701.71 Td (ns) Tj ET Q
+371.34 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 374.18 744.23 Td (-flto) Tj ET Q
+402.52 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 405.36 744.23 Td (-fno-c) Tj ET Q
+q 1.000 1.000 1.000 rg BT 405.36 730.05 Td (omm) Tj ET Q
+q 1.000 1.000 1.000 rg BT 405.36 715.88 Td (on) Tj ET Q
+433.70 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 436.54 744.23 Td (-fno-p) Tj ET Q
+q 1.000 1.000 1.000 rg BT 436.54 730.05 Td (lt) Tj ET Q
+464.89 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 467.72 744.23 Td (-fno-s) Tj ET Q
+q 1.000 1.000 1.000 rg BT 467.72 730.05 Td (anitiz) Tj ET Q
+q 1.000 1.000 1.000 rg BT 467.72 715.88 Td (e=all) Tj ET Q
+496.07 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 498.90 744.23 Td (-fno-s) Tj ET Q
+q 1.000 1.000 1.000 rg BT 498.90 730.05 Td (eman) Tj ET Q
+q 1.000 1.000 1.000 rg BT 498.90 715.88 Td (tic-int) Tj ET Q
+q 1.000 1.000 1.000 rg BT 498.90 701.71 Td (erpos) Tj ET Q
+q 1.000 1.000 1.000 rg BT 498.90 687.53 Td (ition) Tj ET Q
+527.25 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 530.08 744.23 Td (-fno-s) Tj ET Q
+q 1.000 1.000 1.000 rg BT 530.08 730.05 Td (tack-) Tj ET Q
+q 1.000 1.000 1.000 rg BT 530.08 715.88 Td (prote) Tj ET Q
+q 1.000 1.000 1.000 rg BT 530.08 701.71 Td (ctor) Tj ET Q
+558.43 754.01 31.18 -70.87 re f
+q 1.000 1.000 1.000 rg BT 561.26 744.23 Td (-O2) Tj ET Q
+q 1.000 1.000 1.000 rg BT 561.26 730.05 Td (-ffast-) Tj ET Q
+q 1.000 1.000 1.000 rg BT 561.26 715.88 Td (math) Tj ET Q
+1.000 1.000 1.000 rg
+BT /F2 9.00 Tf ET
+BT /F2 9.00 Tf ET
+BT /F1 9.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 683.15 62.36 -56.69 re f
+q 0.000 g BT 54.87 673.36 Td (Himeno) Tj ET Q
+q 0.000 g BT 33.36 659.19 Td (Benchmark -) Tj ET Q
+q 0.000 g BT 64.86 645.01 Td (P.P.S) Tj ET Q
+q 0.000 g BT 44.38 630.84 Td (\(MFLOPS\)) Tj ET Q
+BT /F2 9.00 Tf ET
+0.831 0.831 0.831 rg
+BT /F1 9.00 Tf ET
+90.71 683.15 31.18 -56.69 re f
+q 0.502 0.000 0.000 rg BT 93.55 673.36 Td (655.5) Tj ET Q
+q 0.502 0.000 0.000 rg BT 93.55 659.19 Td (67213) Tj ET Q
+BT /F2 9.00 Tf ET
+1.000 1.000 1.000 rg
+121.89 683.15 31.18 -56.69 re f
+q 0.000 g BT 124.73 673.36 Td (4784) Tj ET Q
+1.000 1.000 1.000 rg
+153.07 683.15 31.18 -56.69 re f
+q 0.000 g BT 155.91 673.36 Td (4935) Tj ET Q
+1.000 1.000 1.000 rg
+184.26 683.15 31.18 -56.69 re f
+q 0.000 g BT 187.09 673.36 Td (4886) Tj ET Q
+1.000 1.000 1.000 rg
+215.44 683.15 31.18 -56.69 re f
+q 0.000 g BT 218.27 673.36 Td (4940) Tj ET Q
+1.000 1.000 1.000 rg
+246.62 683.15 31.18 -56.69 re f
+q 0.000 g BT 249.45 673.36 Td (4993) Tj ET Q
+1.000 1.000 1.000 rg
+277.80 683.15 31.18 -56.69 re f
+q 0.000 g BT 280.63 673.36 Td (4920) Tj ET Q
+1.000 1.000 1.000 rg
+308.98 683.15 31.18 -56.69 re f
+q 0.000 g BT 311.81 673.36 Td (8612) Tj ET Q
+1.000 1.000 1.000 rg
+340.16 683.15 31.18 -56.69 re f
+q 0.000 g BT 343.00 673.36 Td (8408) Tj ET Q
+1.000 1.000 1.000 rg
+371.34 683.15 31.18 -56.69 re f
+q 0.000 g BT 374.18 673.36 Td (8381) Tj ET Q
+1.000 1.000 1.000 rg
+402.52 683.15 31.18 -56.69 re f
+q 0.000 g BT 405.36 673.36 Td (8489) Tj ET Q
+1.000 1.000 1.000 rg
+433.70 683.15 31.18 -56.69 re f
+q 0.000 g BT 436.54 673.36 Td (8371) Tj ET Q
+0.831 0.831 0.831 rg
+BT /F1 9.00 Tf ET
+464.89 683.15 31.18 -56.69 re f
+q 0.000 0.333 0.000 rg BT 467.72 673.36 Td (8613) Tj ET Q
+BT /F2 9.00 Tf ET
+1.000 1.000 1.000 rg
+496.07 683.15 31.18 -56.69 re f
+q 0.000 g BT 498.90 673.36 Td (8502) Tj ET Q
+1.000 1.000 1.000 rg
+527.25 683.15 31.18 -56.69 re f
+q 0.000 g BT 530.08 673.36 Td (8553) Tj ET Q
+1.000 1.000 1.000 rg
+558.43 683.15 31.18 -56.69 re f
+q 0.000 g BT 561.26 673.36 Td (8067) Tj ET Q
+BT /F2 7.00 Tf ET
+BT /F1 7.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 626.45 62.36 -11.34 re f
+q 0.000 g BT 50.15 617.27 Td (Normalized) Tj ET Q
+BT /F2 7.00 Tf ET
+1.000 1.000 1.000 rg
+90.71 626.45 31.18 -11.34 re f
+q 0.000 g BT 93.55 617.27 Td (7.61%) Tj ET Q
+1.000 1.000 1.000 rg
+121.89 626.45 31.18 -11.34 re f
+q 0.000 g BT 124.73 617.27 Td (55.54%) Tj ET Q
+1.000 1.000 1.000 rg
+153.07 626.45 31.18 -11.34 re f
+q 0.000 g BT 155.91 617.27 Td (57.3%) Tj ET Q
+1.000 1.000 1.000 rg
+184.26 626.45 31.18 -11.34 re f
+q 0.000 g BT 187.09 617.27 Td (56.73%) Tj ET Q
+1.000 1.000 1.000 rg
+215.44 626.45 31.18 -11.34 re f
+q 0.000 g BT 218.27 617.27 Td (57.36%) Tj ET Q
+1.000 1.000 1.000 rg
+246.62 626.45 31.18 -11.34 re f
+q 0.000 g BT 249.45 617.27 Td (57.97%) Tj ET Q
+1.000 1.000 1.000 rg
+277.80 626.45 31.18 -11.34 re f
+q 0.000 g BT 280.63 617.27 Td (57.12%) Tj ET Q
+1.000 1.000 1.000 rg
+308.98 626.45 31.18 -11.34 re f
+q 0.000 g BT 311.81 617.27 Td (99.99%) Tj ET Q
+1.000 1.000 1.000 rg
+340.16 626.45 31.18 -11.34 re f
+q 0.000 g BT 343.00 617.27 Td (97.62%) Tj ET Q
+1.000 1.000 1.000 rg
+371.34 626.45 31.18 -11.34 re f
+q 0.000 g BT 374.18 617.27 Td (97.31%) Tj ET Q
+1.000 1.000 1.000 rg
+402.52 626.45 31.18 -11.34 re f
+q 0.000 g BT 405.36 617.27 Td (98.56%) Tj ET Q
+1.000 1.000 1.000 rg
+433.70 626.45 31.18 -11.34 re f
+q 0.000 g BT 436.54 617.27 Td (97.19%) Tj ET Q
+1.000 1.000 1.000 rg
+464.89 626.45 31.18 -11.34 re f
+q 0.000 g BT 467.72 617.27 Td (100%) Tj ET Q
+1.000 1.000 1.000 rg
+496.07 626.45 31.18 -11.34 re f
+q 0.000 g BT 498.90 617.27 Td (98.71%) Tj ET Q
+1.000 1.000 1.000 rg
+527.25 626.45 31.18 -11.34 re f
+q 0.000 g BT 530.08 617.27 Td (99.3%) Tj ET Q
+1.000 1.000 1.000 rg
+558.43 626.45 31.18 -11.34 re f
+q 0.000 g BT 561.26 617.27 Td (93.66%) Tj ET Q
+BT /F1 7.00 Tf ET
+1.000 1.000 1.000 rg
+28.35 615.11 62.36 -22.68 re f
+q 0.000 g BT 57.54 605.93 Td (Standard) Tj ET Q
+q 0.000 g BT 56.37 591.75 Td (Deviation) Tj ET Q
+BT /F2 7.00 Tf ET
+1.000 1.000 1.000 rg
+90.71 615.11 31.18 -22.68 re f
+q 0.000 g BT 93.55 605.93 Td (0.1%) Tj ET Q
+1.000 1.000 1.000 rg
+121.89 615.11 31.18 -22.68 re f
+q 0.000 g BT 124.73 605.93 Td (2.5%) Tj ET Q
+1.000 1.000 1.000 rg
+153.07 615.11 31.18 -22.68 re f
+q 0.000 g BT 155.91 605.93 Td (2.5%) Tj ET Q
+1.000 1.000 1.000 rg
+184.26 615.11 31.18 -22.68 re f
+q 0.000 g BT 187.09 605.93 Td (2.4%) Tj ET Q
+1.000 1.000 1.000 rg
+215.44 615.11 31.18 -22.68 re f
+q 0.000 g BT 218.27 605.93 Td (3.1%) Tj ET Q
+1.000 1.000 1.000 rg
+246.62 615.11 31.18 -22.68 re f
+q 0.000 g BT 249.45 605.93 Td (0.6%) Tj ET Q
+1.000 1.000 1.000 rg
+277.80 615.11 31.18 -22.68 re f
+q 0.000 g BT 280.63 605.93 Td (1.9%) Tj ET Q
+1.000 1.000 1.000 rg
+308.98 615.11 31.18 -22.68 re f
+q 0.000 g BT 311.81 605.93 Td (0.7%) Tj ET Q
+1.000 1.000 1.000 rg
+340.16 615.11 31.18 -22.68 re f
+q 0.000 g BT 343.00 605.93 Td (2.3%) Tj ET Q
+1.000 1.000 1.000 rg
+371.34 615.11 31.18 -22.68 re f
+q 0.000 g BT 374.18 605.93 Td (0.9%) Tj ET Q
+1.000 1.000 1.000 rg
+402.52 615.11 31.18 -22.68 re f
+q 0.000 g BT 405.36 605.93 Td (0.5%) Tj ET Q
+1.000 1.000 1.000 rg
+433.70 615.11 31.18 -22.68 re f
+q 0.000 g BT 436.54 605.93 Td (2%) Tj ET Q
+1.000 1.000 1.000 rg
+464.89 615.11 31.18 -22.68 re f
+q 0.000 g BT 467.72 605.93 Td (2.2%) Tj ET Q
+1.000 1.000 1.000 rg
+496.07 615.11 31.18 -22.68 re f
+q 0.000 g BT 498.90 605.93 Td (1%) Tj ET Q
+1.000 1.000 1.000 rg
+527.25 615.11 31.18 -22.68 re f
+q 0.000 g BT 530.08 605.93 Td (1.2%) Tj ET Q
+1.000 1.000 1.000 rg
+558.43 615.11 31.18 -22.68 re f
+q 0.000 g BT 561.26 605.93 Td (1%) Tj ET Q
+0.020 0.486 0.651 RG
+28.35 42.52 m 566.93 42.52 l S
+BT /F1 7.00 Tf ET
+q 0.000 g BT 31.19 26.25 Td (Phoronix Test Suite v10.8.5) Tj ET Q
+566.93 28.35 0.00 0.00 re f q 0.000 g BT 466.08 26.25 Td (www.phoronix-test-suite.com) Tj ET Q
+
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots [<</Type /Annot /Subtype /Link /Rect [466.08 31.85 564.09 24.85] /Border [0 0 0] /A <</S /URI /URI (http://www.phoronix-test-suite.com/)>>>>]
+/Contents 10 0 R>>
+endobj
+10 0 obj
+<</Length 859>>
+stream
+2 J
+0.85 w
+BT /F2 7.00 Tf ET
+0.133 0.133 0.133 RG
+1.000 1.000 1.000 rg
+q 85.04 0 0 44.13 28.35 775.08 cm /I2 Do Q
+BT /F1 14.00 Tf ET
+q 0.000 g BT 271.97 795.17 Td (Himeno) Tj ET Q
+BT /F1 10.00 Tf ET
+q 0.000 g BT 297.64 779.36 Td () Tj ET Q
+0.020 0.486 0.651 RG
+28.35 765.35 m 566.93 765.35 l S
+BT /F2 7.00 Tf ET
+0.133 0.133 0.133 RG
+q 547.50 0 0 509.25 28.35 244.76 cm /I3 Do Q
+BT /F3 10.00 Tf ET
+1.452 Tw
+q 0.000 g BT 31.19 234.68 Td (This file was automatically generated via the Phoronix Test Suite benchmarking software on Saturday, 8 June 2024) Tj ET Q
+0 Tw
+q 0.000 g BT 31.19 220.50 Td (21:26.) Tj ET Q
+BT /F2 10.00 Tf ET
+0.020 0.486 0.651 RG
+28.35 42.52 m 566.93 42.52 l S
+BT /F1 7.00 Tf ET
+q 0.000 g BT 31.19 26.25 Td (Phoronix Test Suite v10.8.5) Tj ET Q
+566.93 28.35 0.00 0.00 re f q 0.000 g BT 466.08 26.25 Td (www.phoronix-test-suite.com) Tj ET Q
+
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R ]
+/Count 4
+/MediaBox [0 0 595.28 841.89]
+>>
+endobj
+11 0 obj
+<</Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+12 0 obj
+<</Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+13 0 obj
+<</Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+14 0 obj
+<</Type /XObject
+/Subtype /Image
+/Width 308
+/Height 160
+/ColorSpace [/Indexed /DeviceRGB 242 15 0 R]
+/BitsPerComponent 8
+/Filter /FlateDecode
+/DecodeParms <</Predictor 15 /Colors 1 /BitsPerComponent 8 /Columns 308>>
+/Length 3894>>
+stream
+xÚíùsÅÀıVmMm±€  \	˜ÁÂ)rHJ˜„ 9"HS|€ˆ°H€‡€*%$ äÁpÉV)PlI*©J8r,¹vSó¼9z6»Ó=;;»3;“÷æûK6stç3=İßşv÷·_ 5•X›H–Óÿò‚¶É¿"I7¡™ĞLh&4š	Í„fB3¡™Ğ‚ˆÛ%–JšœÜüH,9&4š	Í„fB3¡™ĞLh&4š	Í„fB3¡™ĞLh&4š	Í„fB3¡™ĞLh&4š	Í„fB#ˆ»¢¼¶YghÕ7df¬[†dEZÍoß.NênåšêüÆÜm'Kõ€æ9·¬„-oDZÓ¥µCH*ô^˜_]h®U ‰4çŠÒZP³®DÚÃY¡Dš'wœ"±;İQæ^mÖ ­nw·PTi÷åí¡İè	Ğ
+ y÷vUê‹:¡}kÖ íÏJÔé–¯)´µ ­ šû#¥
+%•im9´hw_U®QûÓZAË€Ö í;*,>õhí´hŞùá*5¶Vh¥íZ´†Éák5 B}hãÀøĞjFG¢VŒKmhÇÁøĞFE¦W×Ru¡5¾b|hŞÉ‘*W©*´l0>´ôÈ5X«"´æÆ‡¶[Õ&©í’T&*£´ÛA{xÖ¡ioädf¤z1(µ2ĞÚ'ÈrÏ!¥ßkË­*Ã¸»kb¥A¼æ¸îoº:w¾Öògph¡ˆ—ÿ:	6š%Óc¤1‚Ù’Òo|‚k%­ÎîÏU‚æ$xT.j`åŠ²åå~ÁL)çÑ• íÁOü`¨Ñ¨&‰‹±÷¤ï¬Z,Áù¾:Ğ–aÇ'h>„çÌË#ih[É¿K¦yëH&­´ìøuÍ¡í$–|IhÏ¬$İ_úS.ç²DâC_R–vÚPĞÖGM\òY×–)j@‹N1´ª6$f¡ä]ŸDzê›j@Ã:óméÛt…–ùó77¿§´îâÃ3­¹¡¹Ò}ÖğØå*@{-X£;4Rïk£’„ş×6 ÇLÛzA›‹«=JIşñû_UÚtìø1ã@kÀ›Ë?Jò¯'¸p®Gïì×lh„¯s©2á)¬ÚüÄ—†öŞ/.W¦€·>Ê9´Â™F†Û‹•j…?Şãˆ¡Ñ$ÇíÂ§†€æÆ¿¿”jà¶JUÚ´“åU]Ÿ’€ÚÒOÜzT"/•ZB»éÕWù{ûKdeäîîÛ‘yŞ©şÓ¶Şğh-ËísåĞpwÜDF£@Äb[ìÔŞY?§Z#6¤—
+Ğ~VeêÍŸ›U‡†Û5aÔ«x¿½I…öDuFïìçÕ†6TœÅËá4F+1M]*@»©Ö ç¤Ju¡aî1á@ÛéyG	0‹Ô¢öÒU¡an«9á@»ˆ©yUhÏû¨Eö©	Í±iKşÎªvRªQÛ¨"4Én£"y€%sœ;½ÌW˜ğOêÍæØª!´/ÂvKæ¹+4KiÊ™êQË1´"	k¯¿øğTÅIg©ºk,hç±dş »_“”§}ÒªµŞ†‚¶K†ï¾`“f{„‘¸k ZÔ6
+ÚR,™îxv¼1ŒÔ=ÛTjD©R#AÃ)¾Ã·KşFXî¯âYêP[j hXIèÇŸÀçgoÓkøÏÂjµ'Æö;H´’w°ãÃv¶z.¯ñgºM94wXÔ¶Keòéâ#]O"rS—úá@¶¼ìø÷Hâ|ØXåĞbUV×FÒ)7;“EGI*–¨]5
+´ïñò$L"]µ]4äwB5¸Î(Ğ°i0Z8uWûdô¨İÆëÀ¡v³Y8W…×,ñŞèQÛ‡^C@óôÅ¡µÌÕˆŸÜ=h8	—²ŞĞváX†´œÍÃÏ¶­ˆµ¯$š(¡= ØN{ıZVBw;9zĞ®IÌ«×Zc<aJà3¿>$´û»¢­Xâ…êí“ƒû'ù5jÆ–õ7úC#N¸¸pÉû„+¬7¢í„ÿVOhDfï‰ºÚÄó/Ñ†1äë­aŸÏËtò8Gs4 -Àò-Òš+H#U|]Ù_ıV™öÌ*ñ¬Ÿé	­y™UŠ%ÇUlÛ›´††7İôìF’ñXùÛåñR#=š2#ŒÿMÓš÷œd>¤Ò#½Ö»g†K3dM¤fj¯>ĞjÎ/“ÏH‘'Ñ}Ä™šøÙéRúğsbH¹•hmÚ)IÉÏİ³fj¿ îäl‰G‰ùa‰I•,H`³êLGFô&g4NÏmDò¾Ô{¯ŠQ<»ÉUÌ7´AÒ5]Œ -Ök8h½ƒíûë´ Ú~ÚhĞ:=
+n¤PºCëã1´.Ë´gØô†v™6´¸Y+ÀÙY_hé´Á eØÕ[Oh¯×Úœº,ÎÚéúAX–o hTè1g²) YïĞ†‚ÖÇ© {ó÷0] µ½F	µE™‡§9»mô¡uEMÒZJ±r×à|K”¡¥ˆ×ê
+müµğFÖÒ-Q„fÛ‹) #´”›a{nJVvŠ´Ù„}½ õÛ™“ß{a–U{h–÷I™ëJÊ¸«Æü”¢íÛhJÊ’°¹£­çÛ‹3iõ¤üjÎš¹©É#ˆ¢"¹•†–4åÓ¬ëÒÍºÊĞæ;%å^qåó¨ŒVj/úÏ„l…Rõ—XXƒ§Q,^ífwÿŸ‰	Í„fB3¡™ĞLh&4š	Í„fB3¡ÉB{˜°Å„%­Œ[›óã4 àX¤vÖ¿fgŸ<Š­ >®K#=¡SÌğ™{¤æM\ÊÎv« íB‹ûì¨VĞ’ ½ S­xùÂ'H\0 Thm^ïÁìfémïPìğ
+ÿ+5¬|2™gY÷ã±­Ã¢ mÍ(xÀêÖÚÅÜÜæv°ª/¸TN²Rt¨Æ
+~në°Ä]Wss¹×W>iğÚÈ¡Ñt	ÅM¹ÔZ¨¢š›u -Ä»ï…ªL=‚‹?"@+kt•`…åÉ}a`¤æ>3ÒíjŠÚcW€Óİã*óHCûÛ6-ThÒŠ0¡Íà–SpĞj×¶è|H¸µ.“ô5:ıÂn?Iç÷à²z´‚8GÍÂ3/°Ûké#,S‘*óìvvîSİŒÆiîõµ#Í½¡SeŒöM9É­ìèÂŞXmhc·Ûıç0¾•jGêìv~’•v;£S¥=ÀÆÜ½;x¦ SZM8Ğús!¥Yh.{ÀôrvÉ
+×R¤òõù€ƒ[ØÿY(mè¬]> 
+ÅVïÕĞ¤!=‰Ğû¹´Ê|ÂÔüÿl4#v´~óû©ğş¥­œ¹xÿ÷0,?ÀÛ~A¹oh‰=ö»•×ÿU—rhl,èRÚÔX¹íübæUr6Mó`€±yê®ôX @›	69ÈœÈä÷e1]ÉN¬:/@[Óós»	ñ†hU=Q0Ää­¡¡½ÔÁúækq`«æ¬næœ~^+‡]
+é)Èc8ŒÎÎç+’‡ÖTğs÷CæP…ì7›ëöS¤M„d U&ğÛO²ÓY¸Ihï¢¥‰{&pïïóI\CĞ|ó!“„½ÂØMŒbë¸ “MÛXrÁ8×ÈÖiù¨¤;QdÌC ¹Ášæö•ŸU&- N›®ˆe ÜV -µÚuù?ÌGÖµAã¿³u \%/„²eaÍC;?õéãõ}–gĞß>n¤j?‘–__ıe¡%•ÿÔƒıó]`5O„FÇNh³_´jZGRAŠ,*Û#xË…^,Ú‰nÀ!^»x”D@;m7:´ÀÑR4æ!h¨înÃ?®¿q;›Ñv)XîÊ¶O|Á‹§Eóå–ÚÜ$.y‡[âãÚ!a­;m)„Ö1íŒ¸ï™ÍC;'|dŒtx‚t$¿UŠ#´jşH[Z·àj³¼ÉQÄ¼ ¾wÀ4ä\±Ne›ÎÍµÁ¡1ú²û—w‡
+©{òù ŒP m‚ÓÕÒ‹Å å ,Nã‘´”–)ûLùî)¾Êd<Ø#- p<7¹Ñ³‚m;_Ì”F×¯`.ËšÿG±ÊM	hL3õ‘p2àmZK‰bà…ÖÌF™©
+©¤M¹ z§®”ÏÊp‰¤»ˆ©Ÿ”´¯…l
+UƒVØ²
+nÏ‡ã÷ƒ¶²%LZ!ÚZ,(4Æ¼cÌŞwå¡¹‰¡ş¦	á‚Ac3wˆĞò‚vİÂ…VCÁËès*CeÉÚ1€…–m¥Úu€å¥âE´1œÿ “]h$W°-ó˜YÇA^óÃhèóù'è&áB£§øvÃ]°^­Î
+ÚÏ'™&A =ë‰Mô#Æ¼)”…Æ˜‡×<@½ò
+¿€Ğ™çü1(²Õ]J­¸¥´Ç#e¨ ­H˜f~Ù
+¶
+4¶N˜T‡~$Ó2Ğ&ƒ•}ŠSL3X)Íû:ÀTµ³åå·ÜïUÈz¤­Ğ®VT÷ñùz& ˜çéœ9áÍocCóZ #Zysß6D­V=hlğÛê‡1×÷´ZCæµn;³{c"Ë@c>à£·¼rİ¨"ÆPMÎş%w
+Ëâqü‡T´}&<¯gıÉ\ fä\º–Ãt¢Gq©ÿÆšlÓÚåœ=	 nÓÙÛ¨šµ.8|&oÓ*BómJ§1hô“±Âjš“¶;õ¼éÙÄËQä[”ÆB‚evùõç¹¸ôK 	2½Ò×Œ²«S¯b]Ö•=ó÷{·0‹z m¡X¸ @.‡ã'ÿË*³ÈXu8¯LñæIƒ†MÉ,…;-g¸fó“qñcæü"£
+7¾İÁwÈ;îÄfa1Z¹Ãñ^Í_t8nùÿßt,íÍø±³³r½«¦³*Ïw›{ãÄÄ÷Où{9,xÍí‡§øú qüjºÉá8Â÷Zäª]Ÿœ8YK™“'NX’ÿÓè¿„ğÌ
+endstream
+endobj
+15 0 obj
+<</Length 729>>
+stream
+     	
+
+  !!# "$!#$"$%#%'$&(%'(&()')+(*,)+-*,-+-.,./-/1.02/1302313424635746857968979:8:;9;=:<>;=?<>@=?@>@A?AB@ACACEBDFCEGDFHEGIFHIGIJHJKIJLJLNKMOLNPMOQNPROQSPRTQSTRTUSUVTVWUVXUWYVY[XZ\Y[]Z\^[]_\^`]_a^`b_ac`bdacebdecefdfgeghfhighjgikhjlikmjlnkmolnpmoqnqsprtqsurtvsuwtvxuwyvxzwy{xz|y{}z|~{}|~€}~€‚ƒ€‚„ƒ…‚„†ƒ…‡„†ˆ…‡‰†ˆŠ‡‰‹ˆŠŒ‰‹ŠŒ‹Œ‘’‘“’”‘“•’”–“•—”–˜•—™–˜š—š›˜›™œ›Ÿœ Ÿ¡ ¢Ÿ¡£ ¢¤¡£¥¢¤¦£¥§¤¦¨¥§©¦¨ª§©«¨ª¬©«­ª¬®«­¯¬®°­°²®±³¯²´±³µ²´¶³µ·´¶¸µ·¹¶¸º·¹»¸º¼¹»½º¼¾»½¿¼¾Á½ÀÂ¾ÁÃ¿ÂÄÁÃÅÂÄÆÃÅÇÄÆÈÅÇÉÆÈÊÇÉËÈÊÌÉËÎÊÍÏËÎĞÌÏÑÎĞÒÏÑÓĞÒÔÑÓÕÒÔÖÓÕ×ÔÖØÕØÚÖÙÛ×ÚÜÙÛİÚÜŞÛİßÜŞàİßáŞàâßáäàãåáäæãåçäæèåçéæèêçéëèêìéëîêíïëîğíïñîğòïñóğòôñóõòô÷óöøô÷ùöøú÷ùûøúüùûıúüÿûşÿü
+endstream
+endobj
+16 0 obj
+<</Type /XObject
+/Subtype /Image
+/Width 158
+/Height 82
+/ColorSpace /DeviceRGB
+/BitsPerComponent 8
+/Filter /DCTDecode
+/Length 6194>>
+stream
+ÿØÿà JFIF  . .  ÿÛ C 			
+
+
+
+
+
+	
+
+
+ÿÛ C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÿÀ  R " ÿÄ              
+	ÿÄ R     	
+!"1Q#29AWavw–³µÒ$78RXY‘•—´ÑÓ6BVbux”ÔScqs¢ÕÿÄ                 ÿÄ                 ÿÚ   ? ¿Í4h4h4hÿ ,ä¬ŒŒ©s!ılpM 
+«Üç¯ıí9'E¹’ê&6í:|§}ÜGES¯<²¥­F*9$ŸR~ş“.~ú×?áßÏ¯NwÑCìGmËñADşê Ñ£F€Ñ£F€Ñ£F€Ö&ßÔ|S®£qF’õ>Û¡ËªÎf§œf;+yil)IIYJ ¨xä³šæ»ÍşÙ_ñk]ış‚/| í™}Ìòõ-;şÿ S’—Pf¯LUŒ•%¹L!ÖÒ°‚TG<sëë¥’Ó0Ù?èe#şóiĞdôhÑ 5WİO<T[Øm~©‡°­9üÉ‘)®5B@˜ÔŠ[éä)¹……¸“è[ağB’µ6¡Æ¸/‹­uå·J[}66³w»KºnJ:&dË’™,·&•N{Ÿ&œÒyiÙcŠä),) r%4³ı™nG~9º·Í­c)—=ÉPIum1Â…$É’òÈC§‘ÊÖ@åIHåJJHXîCñ™uP¹ënJ±±æ$¶)ágÙá±mL–àOÚ8ô²¯¾” }ítµø×wk×ãDİ~×¬K¾ˆV"Mœäª=A	?ıYÙ,¸GÄ#±°xã¸sÈè¸+ÁW›i1QÜ®ûÙ§×héMeFŒ¾>T—ÛSÀü”|>ÿ §êàôŞFÙìz†TÚfVƒ™étÈê‘6ŞfŠªet4”÷(±Íy¹d }Ô8—UèÚÉãA|İ9º³ì›ªEŒıÓµœ˜_ªÓXC—™[`E¬R;½y‚HZ9ôóšSéßÏ IM"İ·vm(¹ßŞµVñµªØ“#©HRT•pã6}i`8ÒÁJÒT•	rn’Gl®©[$¶·Gn@L¬:§)—­¿â±I¬0ç2	õòÖ•6ó|ò|§ÛçŞç@—™s÷Ö¹ÿ fş}zs¾Šb;n_Š
+'÷Ti12çï­sşÍüúõj{Dñuî[h{_°¶¿lí"Æ«Óì+ZRubb”ÜvÃiqiAí
+ r@ôĞ4F-ïËwİ—ò%Ç×³ÿ ÇS«b^ L»¼•›•ß]ã‡mûN·‡i3…¿)ÙÊ”)¥øêsÏû^z›IÓ·íÓÖ‹Äñ„zkß¶Ñ·Ë.KÊĞ\nDå3G·RB’Ô•·ïÈ‚	a²Ğ}÷¡Ùª‘¹ü^]d«õgj4«ÓÑqd¢2Äem6	ø!n¹Àøz¬ŸœVÌÉ—¾[ÈÔ*3&VîK²§‘!Òä‰ó¤»Ê”¥(ò¥­Å’I>¥Z`|à’ÃîâúLÍÊïëMá"nÖ!ÙÔ¨À†ò‡*aµ¾[Áöù‡³»{Ïò¶:Ò}Ø¬ÿ ìşêhù[i>ìVöõ5dŸ"Gd¿Ë*ÒÓÈÑò$vKü°r§ı-7üÛgŠ‹¬.KÜ]ƒn¼·i»K¸/ZU6¤ÓV$$)qß˜ÓN  RJT@#Ôi“·›ü²¿âÖ»ú=ıUö'ğil×å;k*Òwg“eK¶nuh±¤Å§Şr3èy(Wk ö’€¼ZóöWüZ×G¿ ]]3“ş†R?áqÿ 6,ö®«;u±Ø¦Ìï¦öı›î[5ÇI¢Óİ˜Í>ÜrCA/ÅmæøZOÜZyù¦‚eh×Ù'P¹õ´kW¾ÜªÕYp($A¨ª«J\U%å6!GŞ§ã®Ù Eíúî»»êe=ÆÜ3×!ë¾ú©T#•«Ÿ**¤,Fe'ø­°m?î iŸ|.±6‰ÓÓÌ°,ß2Ânç¸ë
+m%Ó	Â£NŠ•üCHŒPïoş$‡OÛ)9%D©G’~$éß:N¥(ée¶¤¡ ÚÎ<öÍ&‚@hÑ£@¯ş0YcŞ­­º¬]AL¥fªt×ë°b6”6+°–È• %<ùíÉâ½=çCË$•o	ÍÆ×­ÍÛe}ªJ¨,Ñî«»;W)Dê|¶˜÷ÚRÙœ²¢>!„óõ£[wç?ÚU¬‰‚öÇHÓÕš2±qWBÁTv¦.4x€ñê’¯d”H<z¶5Æ¼˜Òµsu5¼òK1–)¶¾"š‰2 ÷D‰Sà¡–ÏßRú‡şÑĞU\ıõ®Â¿Ÿ^­{gşì÷»İ­Ø¢ oĞ£B¿­XuÈ´©–Ü§]ˆ‰kZVˆ‚@ãU¥¾]VÂ;ÍË‚¹Nr,›k#Ö©ËaÁêSBHùÁHèAz6†ïpV¦àú8aÙVõM§fYôg-JôD¸¸r :¦’…ñõ¥Qıà?ˆò>}X|ˆ-É.ÛòRgùšœûğüä½™ôµÜ–Ä®¬×D»êÙ’“;ö¡L§¹˜r•M,GTyô¶¢Gœÿ ë«OÑ AÚ½"ùÄM
+¹O›B¹mzÊØ—Ce¹ùÑ)R“ê•¡ÄAøêı°/ÂÇ…‹©4İÉì¾»2ï‹¶«KJà˜SŞHáO¡§•1Ü}|¾VIDjRõ§ğÊàş¦WŒ½É`{Ö.6ËRÛH¬K~¤ÜjJBR¹m·ï²øHÚ
+î…¶³Â“R÷ƒß¬¨ä
+\,cXe
+!i÷ºÛ€ˆ°ÚÇ?TõùnûOşD¹úö¿Lxİ¶§’™;)ÈÈl«ßSu¨
+P8CŸé¯Ÿ’ÖKıŠÇÿ —lş¦½s|"½eâÄrKöÄ’´ ©,3~Gpÿ „§“÷ÈAz];üF}4ºŒİ°±U‡Õ,›ê¢°İ:ÎÈ0Û„ıAÃş¤WÛqÈï¬Ÿ­l8WÚGÇ‰M¼ßà}•ÿ µßÑïé ³¶ÎIÍUŒ!lz¡zÚ³’İJ•0„½ŞÔ¸ÚÒ´•%IR‡¢•%IRTALãÑÇ©UçÔo¡vN•™«ë©ä,mfW­«¦¥!|½Ti4§‡9Ïn2¿-j>«r3«?] ®dºûı’ë›ğVÜıXİdºûı’ë›ğVÜıA`~¿àÕ•bÿ sN­TeĞ×~XŸ§gOÌ™s%±qU©2²Í:Ü[f3È;NqÄ¨¥÷šO`¨İÏ$z^$¯Ê¯Ø/ÜG0RÒ¿ıé¿úhuWé™úqmÿ ß»ÿ Ã´jí	Z”úÕ§‘)ÌIƒ-š<VŞaÖÖğSn!iRT• R¤G#J¬‹…Û%”IkÔ\mÄ…6â!8R¤‘È êÖœëÒ}´Ô‹‘ÉíÉ”Â =ÉÔUßïŠÃ¦–ÕlIñvíÌ÷Ú˜Ri4[UŠcN”ûJ´¼®~!‚ë‡;RpU$Ø÷ªÔ‹>¨I< )îzÿ õ×`ÛL® ›¶¯G mïg×õÄd,$T·^®~Ù„Gd}õ¸‘ ÔwaºlÙ½İÄÜÛšÏ×*«eÛQö‰®¶‚–™HFaÆZm(m´rxJ $Ihÿ /KËƒ§vÃÕ|æeê^KË’X­\´ùmö?K€ÚVš|ñJÒÛ¼´…ÊR9o\C¢w…RÊÙİßIİ>ÿ *´{× Òİje³fÓ;¤[òRBÓ!ç¶ÉAã´v†ZRJ‡š{‹–Ğ-‹ó¥mÏŠ·ßRüMlÈ“gß¢<,†¨Í÷"[m´²Ì…õIi§»í/¸…<€a_E^µÙ§£şcŸR¤Ğ•vc{­m&õ²]–Z.)ˆ›gÌ¤$”ú‚‡{Á[n•1^8Îæµˆ²õ—O¸­›Šäİ«;[)IşG €tºİS|™ÿ \õ<¯Ó2r/«JL…<ŒuW¨·³HAõ-°ûêKSšO¯ëCÀv§µår²µ·Ï—FıÀÚq®÷yL³':ÚLºÿ 	ê\¨k#Å-i,8GÛSN¸Ÿ¿©O¶íßí{xVıFëÚæw¶¯Êm"bbTæÛ54Jn3ê@Xme?Z¢’1ÒRå‚ï
+Õ¤Q2ÎÏrm½"+
+­9¤só¥e®Õ¤üB’H#Ô¦ ğXÙw—´LÇñ´êt—^ÈñVËU80§ì@X}98Ü_Q‰m÷w;ºû"Å¯Í¥¢¥‘rWŒû±ã!ô¥G’‚¶]H?;jkZÓÀéüâØŸòµñÕ xË1H¼º¡ÙKCÖê±‘‚)m.M6’óí¥b³Z%%HI\(><óê¥?hlå÷»?'dş¦Ê¾HoçÄÿ •¬½SzåôÉ¯õÅŠCH*RY¹›qd™(åJ?xt›_´6rûŒİŸ“²S_¶px’òcÇÂws,ğ„"Û”JÌ o×A-¼C›şÂGz“Ö³–İuëB•nÀ·éU·â.:ë^Ì]ZæÖĞ’·”„€¢ÛH$$Ñb¼Sw[ı%7™j‘]jsÓ¦S)*srZßZAøİ­'¸z‚>):¯Îœ.£{ÿ ¿iè¬aÊŞ/°KÈU^ü¿(®ÂBçÔÄŠ÷c³\ Àî -ÄÎ™ÎnÓğîÇzV]{YÀ´EÁ¶-G\‹>°§¤¸¨2zKÊ ¼ë«[« Ü³À€‡õ’ëïöK®oÁ[sô<Mcu’ëïöK®oÁ[sô<MÈû	w÷üÆP¿CMÔMÔ²²>Â]ıÿ 1”/ĞÓutÏNy°]Úm[n=1ö±DÜ6æ1õ‡6³·ËAtˆwç–ìä¢‹	*S(’ê $x* üt˜zg¬+*1‘6àKs#U¥ôøòA».4Òà6Ò™¶¹}×Œi$¥*	IBZRˆYãàtŸpØJmíiãºfK¥Í«_T)µ«Aˆ{Cuj|Ogö‰,ºØSjm××»ŞóAO>¼nzªayÓk†Ù¶Í­=ÆÅ¶n8Ç,K¹®ûNŞeÑ¹ÕŠ%BDZCPã%IK-ö\JZB•ä…”„î¶ö·…wàìS·…g§©weãº»»ÖóC”z§"™D“X[o7QÌ$Te3Of:IaMw)Å†Âˆí/ÑªÇÏÊŞfİ°–ğğ…qRn{›O±Ş°rev…Oıë®FRàÏn4v¢¼ë 9õD²…)™M(ûşöºÎl©îÊÉÜNØ$}ìİ,JÊˆ».KË)¢Ü¢µTST¸ğJh´–U	È±[R¦;içĞÓêËQRôX»Öö³1µ¥Q¿²-İK P¨ñ*­Z­On,HL r·^yÕ%¡#Ô©D >'U³pï_|ñ0kZÛƒ…*ú²7ÁBÄ1r…BÖˆãuÚT©*„´ÊB'û;â0c’Ç(SjQPú3öá÷U°–üp¥É¸Êÿ /â*5Ïdİ·}µFöÆªSêN>Ã¬E„ÌGÙCĞ{ÛKŒ«„ºP¢°t`ËÌÈe#º—ZB´+ }A|F½UZ­2…L“[­Ô˜‡
+~\¹O%¶˜i	*[‹Zˆ	JR	$ @>§›÷Ü/OÆÊÊößM»hwõ•*›;Ö"7jËa´-»½oF`ºšS>Ó3Òâ»P—XS\(©*›X^Ş¸­Ì?n[·¾Qvúª±DŠ­ß&,vMiâØ.Jò£¥-!T” v„9<rC–ı5~—ŸÎG€ÿ ¶'ıÖ»
+»Dº(îkf±£M¨ÅnU>¡B^bS$-·[q¥hRHPP$Aƒ¨m6Òµ~Ÿ•2ĞÍ?È;@œágØ›ìïú)ˆ;¸ãxôç\op[­êw“·[›lí”c¬‘=Ì%uĞ¨Ö•©mıG·*İğ!Ï–kŠ¬Ëj§Ä†å8Ó*„Ûhiµ¤­Ï0$,ßF¡>êsnàğ>úè÷N~ÉYĞÀ3¦[°lúş<¥Ñ¥QQX~QeøW7´C~|v¥<äXì¿M²ïÆœ>`ôl–ÀÈ_MwvÕú¶ç/ê*‹tÛ~ÏfÎ]-TÇ2İúB`¥ô&9Ym¯-äw% ½ç¹Üâ‚Tç]ÊíãlÄ{×qùÊÒ°é2åˆ°ê7uÁÔ‡È$4ÚŸZB×À*íO'€OÀ¬õ•|XfÊƒ}ã«¾rÛµ¨êmf‹Pjd)ì+Ó­)Mºƒëê’AÔvß¾Ö÷yåœs½M T-‰ù@¬Ãƒd_m¬R®:}HEö¨è’WN™û¿&RR¤òJµŞk‡º†Õ·–¶_Â4é–U“•™È,^v<¸q¦êf|¥FS­¥Cê3Z”R¶Tè÷ˆàö€˜—tÜ5`Fƒ2ü—lQ©Õ£Ré®ÕÜ2çIp5+EÎ:â’„6Tµ”‚OØ¥S_˜ı9…«€;–ÊIàñªß½Lã{bÊ…Ğ2t*ÃpzR¬L³J%¦­ß¢(½³ä”ò–Üq!ñõt“Èp(<Xv^Û&iêº¨Ùâü¼jÊƒÕŠ>:«šjésM—N©0•†¡"JÑ>ÎØiäÒœKÏº°±ÉVõt_a›C†ó%ae—c!Iî€ğGúüuòı ØŸìU#úµ¯ÕÔ(é‘‘º’^ybrgªK«âû»5XŸsäw,–Ûr)ÈËhR·%¸ïìtˆÏ>B$¥Kl°Ñó	q|Îİé¹zoS©î\Ûª.*”ŞÂâ¶Ü’Ğ.%
+n¯ˆ€Hø	™`@{©Ş
+¨»	•Hc_Heõ6
+ÛJ ÷«âíO |x6¢–y³,ùw2]©MuêFq¼êô—\‚Ú•
+¢‹©â‰9mô•(‡SÂÁQàú4nÓmËz­áÒª]uJ)5K²«
+¥tÔ¤EBäVfšÄ™2Ü#ºCİ¨@ó*WHçĞk¸ø ÂÓ‚¡’ Ãi›ŠÖ¸âÌ¶kí66‘!Hu
+z+ãê‘Ü)%%M”’	ñ£Fƒ]ÅÖ5•Eé}µ6(ö}."%ç&«)©í¶åp8ä¥„¤w<¥’µ8}â£É<ëïŞ•‡.VşÌº4G}»ÚÍÍó#¥^Ğ„Â­ •ò=ğ9<ÈŸŸFcÂV¥¯yo¯;¢ï¶àUB1e›F@©CCá4çØ©8ü!ŞÜ_¼¶¾±Jõ dz8¾ûİ41;N¼µ&5LXÉR‰0Ìé4ÒŠ„6„!)‰J  hÑ ó.O=c UŒ}¨m["O”<Ï/è†2»;¾=¼úñğçUõâAªÔñ^ôğÅÍŒ*/Ûu+Êª}ßP ¼¨o×"4ã¨óh¥RZ@R‚PáRSÜx“£Fƒ-»'\¯x–qö.®8©¶ÍMÚeR¥nK>d	s¢Âeqe;\¶ãÌ­Sn)%M”¤¤‚¤Mı&Eµâ*° [’ObçÂ5®Fa,´Š³‘”¤Æ\êi*Pl¯¸ („ñÉÑ£A|^ÙW(bóVñ6H¯ÚójLÏQ—nÖ„ì¨Šyèî-•$­£Éå
+%'æ×aêÏdÙ˜ß£†ß$c»F™@r‰\¶Er‹¸¦ —I–-%>Py.¸íãÌ,+ãÉ£A¶ãÜwìı»7hZV5—I§õ¢ºu1¦#F-Ö©ŞYm´$%½©íà8|5¹ÔŠoˆ¡Å9=6êÀ2¤İöc‡Ùu†vScİ¶ÚQm*p(¥¤4h#_BË‚½Oê×pÄ
+ÜÆ,ûAª¼[NÓfJÓL¢°'F¨‘Aò£#€kiHà|5rú4h?ÿÙ
+endstream
+endobj
+17 0 obj
+<</Type /XObject
+/Subtype /Image
+/Width 730
+/Height 679
+/ColorSpace /DeviceRGB
+/BitsPerComponent 8
+/Filter /FlateDecode
+/DecodeParms <</Predictor 15 /Colors 3 /BitsPerComponent 8 /Columns 730>>
+/Length 4677>>
+stream
+xœíİ¿‹-i^Çñésƒ‰Â¢ÉÚë` ¸¹áI&•MûØÊšÒ?¢è¬6£LÌ6)ĞD03Ñ`µ—zEvY‘]£èÁ`aêÎ½=}­ó|ê<ß×+Z.Ãï7˜åÍSuúè#                                                                                                            ŞéMz ØŞÇßúÎo|ãëÿôı¿LÀW"GèĞ›O?ûéÇ¿òæÓÏ¾ñË¿ğ“|/= /#tèÍ§ŸıìüË/~òæÓÏ~õğÓıñßgGà=äúyüÌ|í·>ùæoÿï?~ş_ÿöÏ©‘ xCz háù~é?ç÷~ów?= _BPÈß~íão}'= kr„B>9ÿà¿ÿøÛé) X;¦€n?ùñŸıáßüè9= _BĞ¿¯}ï¾ÿ×‘€w’#ôìë?üÓÏÿüOş!= ï'GèÓ¯ÿû_ıíwÿàóô      ã˜¡µeYÒ#´cÙ^Y¶2÷  ar “# @˜ Âä v“ ¶7Ïó¶á0Ûş… |‘[YéÓÃán«¿êşü¸Õ_À—ò° “# @˜”ºáÑ²½²ler “# @˜ Âä &G €09=8NéÚ±l¯,[™ Âä &G €09=(uÃ£e{eÙÊä &G €09 „É  L  arzPê†GËöÊ²•É  L  ar ;¦€‹¸??¦GhjY–:¢-Û+ËV&GèĞóóó4Mé) øª<¬ Âä &G €09 „İ¤€ŒãøşÀ›­ {æt  ¶öâa	 »ât “#ĞƒeYÒ#´cÙ^Y¶29 „¹$İŞŞÎóœ¢©§§§:+_nÙa.ñ×/’#ôéáp—+Sí³‹°+Ö  ar “# ûu:Ò#´cÙÊä &G €09 „É€ı*uw§e+“# @˜ Âä &G €09 „É€ı*uw§e+“# @˜ Âä &G ö«Ôİ–­L  ar “# @˜ Âä v“ ¶7Ïsz®Ò0é èÅ8é xk €09 „ÉèA©-Û+ËV&G €°cz ØÀÛï®®şdš¦†ã ğ:NG €0§#ô`uø1£ã€+ât  ¶æ4€ëât óÍ:ä›5lÅWl ¯²Ò§‡Ã]z®Şıù1=TáaÀ~•º»Ó²•É  L  ar “# @˜ ÂäÀ~N§ôíX¶29 „É  L  ar`¿JİİiÙÊä &G €09 „É  L  ar`¿JİİiÙÊä &G €09 „É€ı*uw§e+“# @Ø1= \Äıù1= _•¡CÏÏÏÓ4¥§hjY–:¿,µ,áa &G  `kã8¦G àœ  a7é`/‡T{³àº8 €­|w¤Ô–í•e+s: „É  L  a.‰§C···ó<§§hêéé©ÎÊm–†áÒÿ
+àçä}z8Ü¥GàŠù#4æaÀ~•úX e+“# @˜ Âä &G ö«Ôİ–­L  ar “# @˜ Âä &G ö«Ôİ–­L  ar “# @˜Ø¯RwwZ¶29 „É  L  ar “# @˜Ø¯RwwZ¶29 „ÓÀEÜŸÓ#  …ã˜€Wğ°zPê†GËöÊ²•É  L  ar óËzğö»««?™¦©á8 ¼Ó  Øšú\§# @˜ Âä v“ ¶7Ïsz:1Cv€eYê|úÕ²•ù¡/}z8Ü¥Gàêù#4ãa &G €09 „É  L ìW©_X¶29 „É  L  ar`¿–eIĞe+“# @˜ Âä &G €09 „É€ı*uw§e+“# @˜ Âä &G ö«Ôİ–­L  ar “# @Ø1= \Äıù1= _•¡CÏÏÏÓ4¥§hjY–:·*•Z€k5cz ^Á»# @˜ Âä v“ 6ğâË"İ¿ÙZêíNËöÊ²•9 ÂüĞ—¬?Æqìş8 'NG €09 „É  Ì/kèĞ<ÏéèÊ0é s^e¥O‡»ôtÂç¡k €09 „É€ıZ–%=B;–­L  ar “# @˜ Âä &G öët:¥GhÇ²•É  L  ar “# ûUêîNËV&G €09 „É  L  ar “# ûUêîNËV&G €09 „É  ì˜ .âşü˜6°,K—,[™¡CÏÏÏÓ4¥§hªÔÿµ•ZŠğ° “# @˜ Âä v“ 60ãûÿjo¶\§#  °µK Ø§# @˜,Ë’¡ËöÊ²•É  Ì%ñtèöövçôM===ÕY¹Ù²Ã04ø· Ézõp¸KÀuóFhÉÃ  L  ar`¿N§Sz„v,[™ Âä &G €09°_¥îî´ler “# @˜ Âä &G €09°_¥îî´ler “# @˜ ÂäÀ~•º»Ó²•É  L  ar “# @˜ ÂnÒÀöæyN@†aH ÀÕÇ1= ¯àa &G €09=(uÃ£e{eÙÊä vL xûİÕÕŸLÓÔp ^Çé æt„¬?ÆqtpEœ  ÀÖ\ƒp]œ  a¾YC‡|³jò™¡ëåUVúôp¸K 4u~LÀ‡ó° Zs+ëŠ Âä &G €09 „É  L @k§Ó)=Â¾È  L  ar “# Ğš[YWä &G €09 „É  L  ar Zs+ëŠ Âä &G €09 ­¹•uE  aÇô p÷çÇô @aã8¦Gh­ÔÁ¯e{eÙÊ<¬ Âä  l­àÃ€«æt »I xñ8dš¦6“ ğœ  ÀÖ
+¾;RêGƒ–í•e+s: „É  L  a~YC‡æyN \Ğ0éş¿–e9Né)vÄ'ôèÓÃá.=p>Ù%k  5G#+r “# @˜ Âä ´æVÖ9 „É  L  ar “# @˜€ÖÜÊº"G €09 „É  L @kne]‘# @˜ Âä &G €09 „É hÍ­¬+r ;¦€‹¸??¦G  
+Ç1= ¯àaô Ô–í•e+“# @˜ Âä æ—5ôàíwWW2MSÃq x§#  °5?ô¸.NG €09 „É  ì&= loçôÀ¥ÃaË²ø¨ïù¡/}z8Ü¥G ¶çë˜½ò° “# @˜ Âä &G  5?«Y‘# @˜ Âä &G  µeYÒ#ì‹ Âä &G €09 „É  L @kne]‘# @˜ Âä &G  5·²®È  L  ar ;¦€‹¸??¦G  
+Ç1=Bk¥^‹³l¯,t¥` \5ï  ar “# @ØMz ØÀ‹/‹LÓÔf’”eYê| Ô²½²leNG €0÷ĞƒÕáÇ8İ‡ ôÄé &G €09 „ùešç9=ĞÈ0éØ€WYéÓÃá.=pq>–Ùk €09 „É hmY–ôû"G €09 „É  L  ar “# ĞÚétJ°/r “# @˜ Âä ´æVÖ9 „É  L  ar “# @˜€ÖÜÊº"G €09 „É  ì˜ .âşü˜à–eñútnÇô­•ºpÚ²½²leÖ  ar “# @˜ ÂnÒÀ^|wuš¦6“ ğœ  ÀÖ
+şĞàª9 Âäô Ô•J–í•e+“# @˜_ÖĞ¡yÓ# —2Cz„øfÍŠOèÑ§‡Ã]z`{¾Ù+k €09 „É hÍ‹#+r “# @˜ Âä ´æVÖ9 „É  L  ar “# @˜€ÖÜÊº"G €09 „É  L @kne]‘# @˜ Âä &G €09 „ÓÀEÜŸÓ# ¼“[Y¡ã8¦G à<¬ Âä &G ¥nx´l¯,[™ Âü²†¼ıîêêO¦ij8 ¯ãt s:BV‡ã8:¸"NG  `k®A¸.NG €°›ô °½yÓ# Ã0¤Gày••>=îÒ# MùpæUó° Zs+ëŠ Âä &G €09 „É  L @k§Ó)=Â¾È  L  ar “# Ğš[YWä &G €09 „É  L  ar Zs+ëŠ Âä &G €09 ­¹•uE  aÇô p÷çÇô @aã8¦Gh­ÔÁ¯e{eÙÊ<¬ Âä  l­àÃ€«æt »I xñ8dš¦6“ ğœ  ÀÖ
+¾;RêGƒ–í•e+s: „É  L  a~YC‡æyN 42Cz„±,ËétJO±#>¡GŸwé€‹ó±ÌnxX ­9Y‘# @˜ Âä &G  5·²®È  L  ar “# @˜ Âä ´æVÖ9 „É  L  ar Zs+ëŠ Âä &G €09 „É  L @kne]‘# @Ø1= \Äıù1= PØ8é xk ¥nx´l¯,[™ Âä &G €0¿¬¡o¿»ºú“išÀë8 €­ù¡/Àuq: „É  L  a7é`{ó<§G š†!=Âë,Ëâ£¾_ä‡¾ôéáp—hÄ'3;àa &G €09 „É  L @k~V³"G €09 „É  L @kË²¤GØ9 „É  L  ar “# @˜€ÖÜÊº"G €09 „É  L @kne]‘# @˜ Âä vL q~L  6cz„ÖJ½gÙ^YèJÁ¸jŞ Âä &G €°›ô °_™¦©Í$)Ë²Ôù@¨e{eÙÊœ  aî¡«Ãq»?è‰Ó  L  ar óË:4ÏszàCÃ¯²Ò§‡Ã]zàu|ù²2k €09 „É hmY–ôû"G €09 „É  L  ar “# ĞÚétJ°/r “# @˜ Âä ´æVÖ9 „É  L  ar “# @˜€ÖÜÊº"G €09 „É  ì˜ .âşü˜à–eñútnÇô­•ºpÚ²½²leÖ  ar “# @˜ Âü²†>|›µÔÊ–í•eû3MSz)òù•zKß²½²leÖĞ!1p]ä &G €09                                                                       \·ÿ/	Ù
+endstream
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
+>>
+/XObject <<
+/I1 14 0 R
+/I2 16 0 R
+/I3 17 0 R
+>>
+>>
+endobj
+18 0 obj
+<</Title (System Information)
+/Parent 37 0 R
+/Next 35 0 R
+/First 19 0 R
+/Last 34 0 R
+/Dest [3 0 R /XYZ 0 232.44 null]
+/Count 0>>
+endobj
+19 0 obj
+<</Title (-march=znver2)
+/Parent 18 0 R
+/Next 20 0 R
+/Dest [3 0 R /XYZ 0 218.26 null]
+/Count 0>>
+endobj
+20 0 obj
+<</Title (-O2)
+/Parent 18 0 R
+/Prev 19 0 R
+/Next 21 0 R
+/Dest [3 0 R /XYZ 0 189.92 null]
+/Count 0>>
+endobj
+21 0 obj
+<</Title (-O3)
+/Parent 18 0 R
+/Prev 20 0 R
+/Next 22 0 R
+/Dest [3 0 R /XYZ 0 161.57 null]
+/Count 0>>
+endobj
+22 0 obj
+<</Title (-fcf-protection=none)
+/Parent 18 0 R
+/Prev 21 0 R
+/Next 23 0 R
+/Dest [3 0 R /XYZ 0 133.23 null]
+/Count 0>>
+endobj
+23 0 obj
+<</Title (-fdata-sections)
+/Parent 18 0 R
+/Prev 22 0 R
+/Next 24 0 R
+/Dest [3 0 R /XYZ 0 104.88 null]
+/Count 0>>
+endobj
+24 0 obj
+<</Title (-fdirect-access-external-data)
+/Parent 18 0 R
+/Prev 23 0 R
+/Next 25 0 R
+/Dest [3 0 R /XYZ 0 76.53 null]
+/Count 0>>
+endobj
+25 0 obj
+<</Title (-ffp-contract=fast)
+/Parent 18 0 R
+/Prev 24 0 R
+/Next 26 0 R
+/Dest [3 0 R /XYZ 0 48.19 null]
+/Count 0>>
+endobj
+26 0 obj
+<</Title (-ffast-math)
+/Parent 18 0 R
+/Prev 25 0 R
+/Next 27 0 R
+/Dest [5 0 R /XYZ 0 725.67 null]
+/Count 0>>
+endobj
+27 0 obj
+<</Title (-ffunction-sections)
+/Parent 18 0 R
+/Prev 26 0 R
+/Next 28 0 R
+/Dest [5 0 R /XYZ 0 697.32 null]
+/Count 0>>
+endobj
+28 0 obj
+<</Title (-flto)
+/Parent 18 0 R
+/Prev 27 0 R
+/Next 29 0 R
+/Dest [5 0 R /XYZ 0 668.97 null]
+/Count 0>>
+endobj
+29 0 obj
+<</Title (-fno-common)
+/Parent 18 0 R
+/Prev 28 0 R
+/Next 30 0 R
+/Dest [5 0 R /XYZ 0 640.63 null]
+/Count 0>>
+endobj
+30 0 obj
+<</Title (-fno-plt)
+/Parent 18 0 R
+/Prev 29 0 R
+/Next 31 0 R
+/Dest [5 0 R /XYZ 0 612.28 null]
+/Count 0>>
+endobj
+31 0 obj
+<</Title (-fno-sanitize=all)
+/Parent 18 0 R
+/Prev 30 0 R
+/Next 32 0 R
+/Dest [5 0 R /XYZ 0 583.93 null]
+/Count 0>>
+endobj
+32 0 obj
+<</Title (-fno-semantic-interposition)
+/Parent 18 0 R
+/Prev 31 0 R
+/Next 33 0 R
+/Dest [5 0 R /XYZ 0 555.59 null]
+/Count 0>>
+endobj
+33 0 obj
+<</Title (-fno-stack-protector)
+/Parent 18 0 R
+/Prev 32 0 R
+/Next 34 0 R
+/Dest [5 0 R /XYZ 0 527.24 null]
+/Count 0>>
+endobj
+34 0 obj
+<</Title (-O2 -ffast-math)
+/Parent 18 0 R
+/Prev 33 0 R
+/Dest [5 0 R /XYZ 0 498.89 null]
+/Count 0>>
+endobj
+35 0 obj
+<</Title (Result Overview Table)
+/Parent 37 0 R
+/Prev 18 0 R
+/Next 36 0 R
+/Dest [5 0 R /XYZ 0 223.93 null]
+/Count 0>>
+endobj
+36 0 obj
+<</Title (Himeno Benchmark)
+/Parent 37 0 R
+/Prev 35 0 R
+/Dest [9 0 R /XYZ 0 754.01 null]
+/Count 0>>
+endobj
+37 0 obj
+<</Type /Outlines /First 18 0 R
+/Last 36 0 R>>
+endobj
+38 0 obj
+<<
+/Producer (Phoronix Test Suite)
+/Subject (Phoronix-Test-Suite.com)
+/Title (Himeno)
+/Subject (Himeno Benchmarks)
+/Author (Phoronix Test Suite)
+/Keywords ()
+/Creator (Phoronix Test Suite v10.8.5)
+/CreationDate (D:20240608212610)
+>>
+endobj
+39 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Outlines 37 0 R
+/PageMode /UseOutlines
+>>
+endobj
+xref
+0 40
+0000000000 65535 f 
+0000018554 00000 n 
+0000035181 00000 n 
+0000000009 00000 n 
+0000000087 00000 n 
+0000001662 00000 n 
+0000001890 00000 n 
+0000007522 00000 n 
+0000007750 00000 n 
+0000017416 00000 n 
+0000017645 00000 n 
+0000018659 00000 n 
+0000018761 00000 n 
+0000018858 00000 n 
+0000018963 00000 n 
+0000023122 00000 n 
+0000023901 00000 n 
+0000030261 00000 n 
+0000035341 00000 n 
+0000035486 00000 n 
+0000035599 00000 n 
+0000035715 00000 n 
+0000035831 00000 n 
+0000035964 00000 n 
+0000036092 00000 n 
+0000036233 00000 n 
+0000036363 00000 n 
+0000036487 00000 n 
+0000036619 00000 n 
+0000036737 00000 n 
+0000036861 00000 n 
+0000036982 00000 n 
+0000037112 00000 n 
+0000037252 00000 n 
+0000037385 00000 n 
+0000037500 00000 n 
+0000037634 00000 n 
+0000037750 00000 n 
+0000037813 00000 n 
+0000038062 00000 n 
+trailer
+<<
+/Size 40
+/Root 39 0 R
+/Info 38 0 R
+>>
+startxref
+38152
+%%EOF
