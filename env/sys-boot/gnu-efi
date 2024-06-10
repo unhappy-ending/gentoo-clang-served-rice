@@ -1,3 +1,0 @@
-# issues with -flto
-#
-CFLAGS="${CFLAGS} -fno-lto"

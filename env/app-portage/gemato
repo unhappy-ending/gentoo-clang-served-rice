@@ -1,4 +1,0 @@
-# test phase fails with app-crypt/gnupg[-ssl]
-# test phase fails (+144)
-# 	tested against chroot; fails (+144)
-#

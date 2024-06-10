@@ -1,4 +1,0 @@
-# RESTRICT="test"
-# test phase fails with sandboxing (+4/140)
-# 	skip testing
-#

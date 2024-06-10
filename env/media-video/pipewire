@@ -1,4 +1,0 @@
-# test phase fails with -ffast-math (+1/21)
-#
-CFLAGS="${CFLAGS} -fno-fast-math"
-CXXFLAGS="${CXXFLAGS} -fno-fast-math"

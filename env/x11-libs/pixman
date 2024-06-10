@@ -1,4 +1,0 @@
-# compile phase fails
-# 	use workaround -ftrapping-math
-#
-CFLAGS="${CFLAGS} -ftrapping-math"

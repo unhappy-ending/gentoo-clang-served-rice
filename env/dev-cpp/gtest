@@ -1,8 +1,0 @@
-# test phase fails with -ffast-math (+3/61)
-# test phase fails with -fvirtual-function-elimination (+58/61)
-# test phase fails with -fwhole-program-vtables (+4/61)
-#
-CFLAGS="${CFLAGS} -fno-fast-math"
-CXXFLAGS="${CXXFLAGS} -fno-fast-math"
-CXXFLAGS="${CXXFLAGS} -fno-virtual-function-elimination"
-CXXFLAGS="${CXXFLAGS} -fno-whole-program-vtables"

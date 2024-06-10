@@ -1,6 +1,0 @@
-# test phase fails with -ffast-math (+2/243)
-# test phase fails with -fvirtual-function-elimination (+243/243)
-#
-CFLAGS="${CFLAGS} -fno-fast-math"
-CXXFLAGS="${CXXFLAGS} -fno-fast-math"
-CXXFLAGS="${CXXFLAGS} -fno-virtual-function-elimination"

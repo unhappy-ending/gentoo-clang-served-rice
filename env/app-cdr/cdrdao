@@ -1,6 +1,0 @@
-# filter-flto
-# 	use workaround _FLAG_O_MATIC_ECLASS=1
-# configure phase fails
-# 	use workaround _FLAG_O_MATIC_ECLASS=1
-#
-_FLAG_O_MATIC_ECLASS=1

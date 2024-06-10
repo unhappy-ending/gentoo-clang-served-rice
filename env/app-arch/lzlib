@@ -1,4 +1,0 @@
-# test phase fails binutils-config[-native-symlinks]
-# 	test phase passes with binutils-ar
-# 	skip testing
-#

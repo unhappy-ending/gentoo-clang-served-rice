@@ -1,4 +1,0 @@
-# RESTRICT="test"; bug 236845
-# test phase fails (+1/1)
-# 	tested against chroot; fails (+1/1)
-#

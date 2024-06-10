@@ -1,7 +1,0 @@
-# RESTRICT="test"
-# compile phase fails with -ffast-math
-# compile phase fails with -Werror=implicit-function-declaration
-#
-CFLAGS="${CFLAGS} -fno-fast-math"
-# diagnostics
-CFLAGS="${CFLAGS} -Wno-error=implicit-function-declaration"

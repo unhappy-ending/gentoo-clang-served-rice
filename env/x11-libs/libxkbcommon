@@ -1,4 +1,0 @@
-# test phase fails with -DNDEBUG (+1/19)
-# 	use workaround CPPFLAGS="-DEBUG -U_FORTIFY_SOURCE"
-#
-#CPPFLAGS="-DEBUG -U_FORTIFY_SOURCE"

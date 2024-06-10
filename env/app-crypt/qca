@@ -1,3 +1,0 @@
-# test phase fails with -fvirtual-function-elimination (+24/24)
-#
-CXXFLAGS="${CXXFLAGS} -fno-virtual-function-elimination"

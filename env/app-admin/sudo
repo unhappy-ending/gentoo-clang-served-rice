@@ -1,3 +1,0 @@
-# compile phase fails with -Werror=incompatible-library-redeclaration
-#
-CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"

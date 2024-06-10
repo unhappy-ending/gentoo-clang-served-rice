@@ -1,4 +1,0 @@
-# compile phase fails with -fuse-ld=lld
-#	use workaround ${CFLAGS} -fuse-ld=lld
-#
-CFLAGS="${CFLAGS} -fuse-ld=lld"

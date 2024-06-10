@@ -1,6 +1,0 @@
-# compile phase fails with -Wl,--lto-whole-program-visibility
-# test phase fails with -DNDEBUG (+1/14)
-# 	use workaround CPPFLAGS="-DEBUG -U_FORTIFY_SOURCE"
-#
-LDFLAGS="${LDFLAGS} -Wl,--no-lto-whole-program-visibility"
-#CPPFLAGS="-DEBUG -U_FORTIFY_SOURCE"

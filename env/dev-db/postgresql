@@ -1,6 +1,0 @@
-# configure phase fails with -ffast-math
-# test phase fails with -Werror=incompatible-library-redeclaration (+1/212)
-#
-CFLAGS="${CFLAGS} -fno-fast-math"
-# diagnostics
-CFLAGS="${CFLAGS} -Wno-error=incompatible-library-redeclaration"
